@@ -1,0 +1,143 @@
+#aries {
+  position: absolute;
+  background-image: url('/ressources/images/aries.png');
+  background-size: cover;
+
+  height: 200px;
+  width: 200px;
+
+  left: 650px;
+  top: -65px;
+  z-index: +2;
+}
+
+#taurus {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1200px;
+  z-index: +2;
+  top: -65px;
+}
+
+#gemini {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1650px;
+  top: 180px;
+  z-index: +2;
+}
+
+#cancer {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1900px;
+  top: 650px;
+  z-index: +2;
+}
+
+#leo {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1900px;
+  top: 1150px;
+  z-index: +2;
+}
+
+#virgo {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1650px;
+  top: 1600px;
+  z-index: +2;
+}
+
+#libra {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 1200px;
+  top: 1850px;
+  z-index: +2;
+}
+
+#scorpius {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 650px;
+  top: 1850px;
+  z-index: +2;
+}
+
+#sagittarus {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 200px;
+  top: 1600px;
+  z-index: +2;
+}
+
+#capricornus {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: -50px;
+  top: 1150px;
+  z-index: +2;
+}
+
+#aquarius {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: -50px;
+  top: 650px;
+  z-index: +2;
+}
+#pisces {
+  position: absolute;
+  background-image: url('/ressources/images/taurus.png');
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+
+  left: 200px;
+  top: 180px;
+  z-index: +2;
+}
