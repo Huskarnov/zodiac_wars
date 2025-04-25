@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'antique';
-  src: url('../ressources/fonts/AntiqueNo14.ttf');
+  font-family: 'powel';
+  src: url('../ressources/fonts/PowellAntique-Bold.ttf');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap'); */
 
 html {
   box-sizing: border-box;
-  font-family: 'antique';
+  font-family: 'powel';
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -88,57 +88,127 @@ body {
   background-image: url('/ressources/images/backgroundFlat.png');
   background-size: cover;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  /* width: ; */
+  align-items: center; */
+
+  /* width: 2000px; */
+}
+main {
+  display: block;
+  /* justify-content: center; */
+  /* left: 50%; */
+
+  /* background-color: goldenrod; */
 }
 
 header {
-  /* background-color: hotpink; */
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  background-color: hotpink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
   /* height: 150px; */
+  /* border-radius: 10% 10% 10% 10% / 0% 0% 20% 20%; */
+  background-image: url('/ressources/images/headerBg.png');
+  box-shadow: inset white 3px 3px 4px 1px, inset black -2px -2px 6px 0px;
+  border: none;
 
-  /* margin-bottom: 2rem; */
-  /* margin-top: 1rem; */
+  width: 90vw;
+  left: 100px;
+  z-index: 5;
 }
 
-header > h1 {
-  /* color: white; */
-  font-size: 11rem;
+.headerLeft {
+  display: flex;
+  justify-content: start;
+  padding-left: 20px;
+}
+.AstralEvents {
+  font-size: calc(2rem);
+  text-shadow: 1px 1px #160303;
+
+  background-color: rgba(240, 248, 255, 0.836);
+  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
+    inset black -2px -2px 6px 0px;
+  border-radius: 10px;
+  border: none;
+
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.headerMid {
+  background-color: red;
+}
+header h1 {
+  color: whitesmoke;
+  font-size: 4rem;
   font-weight: 900;
   text-align: center;
+  grid-column: 2/3;
+  /* background-color: aliceblue; */
 
-  background: linear-gradient(#ffffff, #504f4f);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  animation: glow 2s ease-in-out infinite;
 
-  animation: logo_glow 2s ease-in-out infinite;
+  text-shadow: 3px 5px #160303;
+
+  /* background: linear-gradient(#ffffff, #504f4f); */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+
+  user-select: none;
 }
-
-@keyframes logo_glow {
+@keyframes glow {
   0% {
     filter: brightness(1.2);
   }
   50% {
-    filter: brightness(1.4);
+    filter: brightness(2);
   }
   100% {
     filter: brightness(1.2);
   }
 }
 
+.headerRight {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+.mySpirit {
+  font-size: calc(2rem);
+  text-shadow: 1px 1px #160303;
+
+  background-color: rgba(240, 248, 255, 0.836);
+  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
+    inset black -2px -2px 6px 0px;
+  border-radius: 10px;
+  border: none;
+
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mySpirit:hover,
+.AstralEvents:hover {
+  /* filter: brightness(1.2); */
+  animation: glow 1s ease-in-out infinite;
+}
+
 /* ---------------------------------------------------------------- */
 
 #playGround {
+  top: 100px;
   position: relative;
-
   width: 2000px;
   height: 2000px;
+
+  /* background-color: yellowgreen; */
 }
 .universe {
-  /* position: absolute; */
+  position: absolute;
 
   display: flex;
   flex-wrap: wrap;
@@ -154,14 +224,19 @@ header > h1 {
 /* ------------------------------------------- */
 @media screen and (max-width: 600px) {
   body {
-    display: block;
+    /* display: block; */
   }
   header {
-    width: 400px;
-    text-align: center;
+    position: fixed;
+    display: flex;
+    width: 100dvw;
+    /* position: fixed; */
+    /* background-color: red; */
+
+    /* width: 100vw; */
   }
   h1 {
-    width: 400px;
-    font-size: 1rem;
+    display: block;
+    font-size: 2rem;
   }
 }
