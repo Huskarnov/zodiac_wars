@@ -175,7 +175,22 @@ header h1 {
 .headerRight {
   display: flex;
   justify-content: end;
+  gap: 10px;
   padding-right: 20px;
+}
+.factionChat {
+  font-size: calc(2rem);
+  text-shadow: 1px 1px #160303;
+
+  background-color: rgba(240, 248, 255, 0.836);
+  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
+    inset black -2px -2px 6px 0px;
+  border-radius: 10px;
+  border: none;
+
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .mySpirit {
   font-size: calc(2rem);
@@ -192,7 +207,8 @@ header h1 {
   padding-bottom: 5px;
 }
 .mySpirit:hover,
-.AstralEvents:hover {
+.AstralEvents:hover,
+.factionChat:hover {
   /* filter: brightness(1.2); */
   animation: glow 1s ease-in-out infinite;
 }
