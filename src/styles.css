@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'neue';
-  src: url('../ressources/fonts/neue.woff2');
+  font-family: 'antique';
+  src: url('../ressources/fonts/AntiqueNo14.ttf');
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap'); */
 
 html {
   box-sizing: border-box;
-  font-family: 'neue';
+  font-family: 'antique';
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -95,22 +95,22 @@ body {
 }
 
 header {
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   justify-content: center;
   /* height: 150px; */
 
-  margin-bottom: 5rem;
-  margin-top: 3rem;
+  /* margin-bottom: 2rem; */
+  /* margin-top: 1rem; */
 }
 
 header > h1 {
-  color: white;
-  font-size: 5rem;
+  /* color: white; */
+  font-size: 11rem;
   font-weight: 900;
   text-align: center;
 
-  background: linear-gradient(#ffffff, #000000);
+  background: linear-gradient(#ffffff, #504f4f);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
