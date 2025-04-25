@@ -1,13 +1,13 @@
-/* 
 @font-face {
-  font-family: 'Rye';
-  src: url(./Rye-Regular.ttf);
-} */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+  font-family: 'neue';
+  src: url('../ressources/fonts/neue.woff2');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap'); */
 
 html {
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'neue';
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -81,6 +81,8 @@ h6 {
   isolation: isolate;
 }
 /* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
 
 body {
   background-image: url('/ressources/images/backgroundFlat.png');
@@ -88,33 +90,42 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  /* width: ; */
 }
 
 header {
+  background-color: hotpink;
   display: flex;
   justify-content: center;
-  height: 150px;
+  /* height: 150px; */
 
   margin-bottom: 5rem;
   margin-top: 3rem;
 }
 
-header > img {
-  height: 100%;
+header > h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+
+  background: linear-gradient(#ffffff, #000000);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   animation: logo_glow 2s ease-in-out infinite;
 }
 
 @keyframes logo_glow {
   0% {
-    filter: brightness(0.8);
-  }
-  50% {
     filter: brightness(1.2);
   }
+  50% {
+    filter: brightness(1.4);
+  }
   100% {
-    filter: brightness(0.8);
+    filter: brightness(1.2);
   }
 }
 
@@ -127,13 +138,30 @@ header > img {
   height: 2000px;
 }
 .universe {
-  position: absolute;
+  /* position: absolute; */
 
   display: flex;
   flex-wrap: wrap;
   width: 2000px;
   height: 2000px;
 
-  background-image: url('/ressources/images/12gon.png');
-  background-size: cover;
+  /* background-image: url('/ressources/images/12gon.png');
+  background-size: cover; */
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  header {
+    width: 400px;
+    text-align: center;
+  }
+  h1 {
+    width: 400px;
+    font-size: 1rem;
+  }
 }

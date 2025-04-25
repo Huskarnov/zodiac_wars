@@ -7,7 +7,6 @@
   width: 200px;
 
   left: 650px;
-  top: -65px;
   z-index: +2;
 }
 
@@ -20,7 +19,6 @@
 
   left: 1200px;
   z-index: +2;
-  top: -65px;
 }
 
 #gemini {
@@ -42,7 +40,7 @@
   height: 200px;
   width: 200px;
 
-  left: 1900px;
+  left: 1790px;
   top: 650px;
   z-index: +2;
 }
@@ -54,14 +52,14 @@
   height: 200px;
   width: 200px;
 
-  left: 1900px;
+  left: 1800px;
   top: 1150px;
   z-index: +2;
 }
 
 #virgo {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/virgo.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -73,31 +71,31 @@
 
 #libra {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/libra.png');
   background-size: cover;
   height: 200px;
   width: 200px;
 
   left: 1200px;
-  top: 1850px;
+  top: 1790px;
   z-index: +2;
 }
 
-#scorpius {
+#scorpio {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/scorpio.png');
   background-size: cover;
   height: 200px;
   width: 200px;
 
   left: 650px;
-  top: 1850px;
+  top: 1790px;
   z-index: +2;
 }
 
 #sagittarus {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/sagittarus.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -109,24 +107,22 @@
 
 #capricornus {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/capricornus.png');
   background-size: cover;
   height: 200px;
   width: 200px;
 
-  left: -50px;
   top: 1150px;
   z-index: +2;
 }
 
 #aquarius {
   position: absolute;
-  background-image: url('/ressources/images/taurus.png');
+  background-image: url('/ressources/images/aquarius.png');
   background-size: cover;
   height: 200px;
   width: 200px;
 
-  left: -50px;
   top: 650px;
   z-index: +2;
 }
