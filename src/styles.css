@@ -104,7 +104,7 @@ main {
 
 header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgba(0, 0, 0, 0.74);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -112,12 +112,15 @@ header {
   /* background-image: url('/ressources/images/zwBgRec.png');
   background-size: cover; */
 
-  box-shadow: inset rgba(160, 98, 98, 0.445) -8px 3px 8px 1px,
-    inset rgba(106, 109, 90, 0.055) -11px -2px 5px 5px;
+  /* box-shadow: inset rgba(160, 98, 98, 0.445) -8px 3px 8px 1px,
+    inset rgba(156, 158, 145, 0.055) -11px -2px 5px 5px; */
+
+  box-shadow: 0 0 3px white;
+
   /* border-radius: 0 0 10px 10px; */
   border: none;
 
-  padding: 0 10px 0 10px;
+  padding: 5px 10px 5px 10px;
   z-index: 5;
 }
 
@@ -133,17 +136,14 @@ header {
   background-size: cover; */
 }
 header h1 {
-  color: rgb(235, 199, 183);
+  color: rgb(255, 255, 255);
   font-size: 4rem;
   font-weight: 900;
   text-align: center;
   grid-column: 2/3;
-  /* background-color: aliceblue; */
 
-  animation: glow 2s ease-in-out infinite;
-
-  text-shadow: 1px 1px 5px #a80303, 2px 2px 5px #ff0000c4, 3px 3px 5px #ff000088,
-    4px 4px 5px #ff00002f;
+  text-shadow: 1px 1px 5px #ffffff, 2px 2px 5px #000000c4, 3px 3px 5px #ffffff88,
+    4px 4px 5px #0000002f;
 
   /* background: linear-gradient(#ffffff, #504f4f); */
   /* background-clip: text; */
@@ -229,6 +229,9 @@ header button:hover {
   .header-button-text {
     display: none;
   }
+  header h1 {
+    font-size: calc(1rem + 2vw);
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -249,10 +252,6 @@ header button:hover {
 
   } */
   header h1 {
-    font-size: 2rem;
-  }
-  h1 {
-    display: block;
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 }
