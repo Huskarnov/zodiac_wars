@@ -85,7 +85,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 body {
-  background-image: url('/ressources/images/backgroundFlat.png');
+  background-image: url('/ressources/images/backgroundblack.webp');
   background-size: cover;
 
   /* display: flex;
@@ -104,7 +104,7 @@ main {
 
 header {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgba(0, 0, 0, 0.788);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -112,9 +112,9 @@ header {
   /* background-image: url('/ressources/images/zwBgRec.png');
   background-size: cover; */
 
-  box-shadow: inset rgba(148, 96, 96, 0.452) 3px 3px 11px 1px,
-    inset rgba(164, 170, 131, 0.055) -2px -2px 5px 5px;
-  border-radius: 0 0 10px 10px;
+  box-shadow: inset rgba(160, 98, 98, 0.445) -8px 3px 8px 1px,
+    inset rgba(106, 109, 90, 0.055) -11px -2px 5px 5px;
+  /* border-radius: 0 0 10px 10px; */
   border: none;
 
   padding: 0 10px 0 10px;
@@ -123,18 +123,8 @@ header {
 
 .headerLeft {
   display: flex;
-  justify-content: start;
-  padding-left: 20px;
-}
-.AstralEvents {
-  font-size: calc(2rem);
-  text-shadow: 1px 1px #160303;
-
-  background-color: rgba(240, 248, 255, 0.836);
-  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
-    inset black -2px -2px 6px 0px;
-  border-radius: 10px;
-  border: none;
+  justify-content: center;
+  gap: 10px;
 }
 
 .headerMid {
@@ -180,31 +170,6 @@ header h1 {
   gap: 10px;
   /* padding-right: 20px; */
 }
-.factionChat {
-  display: flex;
-  gap: 10px;
-  font-size: calc(2rem);
-  text-shadow: 1px 1px #160303;
-
-  background-color: rgba(240, 248, 255, 0.836);
-  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
-    inset black -2px -2px 6px 0px;
-  border-radius: 10px;
-  border: none;
-}
-.mySpirit {
-  display: flex;
-  gap: 15px;
-  font-size: calc(2rem);
-  text-shadow: 1px 1px #160303;
-  text-wrap: nowrap;
-
-  background-color: rgba(240, 248, 255, 0.836);
-  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
-    inset black -2px -2px 6px 0px;
-  border-radius: 10px;
-  border: none;
-}
 
 .factionImage {
   /* position: absolute; */
@@ -215,8 +180,20 @@ header h1 {
 
 header button {
   /* width: 250px; */
+  font-size: calc(2rem);
+  text-shadow: 1px 1px #160303;
+  text-wrap: nowrap;
+
+  display: flex;
+  gap: 10px;
   padding: 5px 30px;
   height: 80%;
+
+  background-color: rgba(240, 248, 255, 0.836);
+  box-shadow: inset rgba(255, 255, 255, 0.185) 3px 3px 4px 1px,
+    inset black -2px -2px 6px 0px;
+  border-radius: 10px;
+  border: none;
 }
 .mySpirit:hover,
 .AstralEvents:hover,
