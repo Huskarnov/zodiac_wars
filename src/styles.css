@@ -218,8 +218,8 @@ header button:hover {
   width: 2000px;
   height: 2000px;
 
-  /* background-image: url('/ressources/images/12gon.png');
-  background-size: cover; */
+  background-image: url('/ressources/images/12gon.png');
+  background-size: cover;
 }
 
 /* ------------------------------------------- */
