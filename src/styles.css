@@ -129,7 +129,7 @@ header {
 
 .headerMid {
   /* background-color: rgba(255, 0, 0, 0.616); */
-  /* background-image: url('/ressources/images/zwBg.png');
+  /* background-image: url('/ressources/images/logoRoundStar.png');
   background-size: cover; */
 }
 header h1 {
@@ -156,7 +156,7 @@ header h1 {
     filter: brightness(1.2);
   }
   50% {
-    filter: brightness(2);
+    filter: brightness(2.5);
   }
   100% {
     filter: brightness(1.2);
@@ -195,9 +195,7 @@ header button {
   border-radius: 10px;
   border: none;
 }
-.mySpirit:hover,
-.AstralEvents:hover,
-.factionChat:hover {
+header button:hover {
   /* filter: brightness(1.2); */
   animation: glow 1s ease-in-out infinite;
 }
@@ -227,6 +225,11 @@ header button {
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
+@media screen and (max-width: 1500px) {
+  .header-button-text {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 600px) {
   header {
@@ -237,24 +240,16 @@ header button {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  /* header {
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: red;
-    /* left: 0;
-    top: 0; */
-    /* width: 100vw; */
-  }
+
+  } */
   header h1 {
-    font-size: 4rem;
-  }
-  .headerLeft {
-    display: none;
-  }
-  .headerRight {
-    display: none;
+    font-size: 2rem;
   }
   h1 {
     display: block;
