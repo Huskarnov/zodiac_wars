@@ -142,3 +142,97 @@
   filter: brightness(1.3);
   cursor: pointer;
 }
+/* --------------------ursa minor--------------------- */
+#polaris {
+  position: absolute;
+
+  height: 105px;
+  width: 105px;
+
+  top: 925px;
+  left: 950px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+#kochab {
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+
+  top: 1122px;
+  left: 1197px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+#pherkad {
+  position: absolute;
+
+  height: 35px;
+  width: 35px;
+
+  top: 1185px;
+  left: 1195px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+#epsilonUrsae {
+  position: absolute;
+
+  height: 35px;
+  width: 35px;
+
+  top: 1085px;
+  left: 1047px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+#zetaUrsae {
+  position: absolute;
+
+  height: 32px;
+  width: 32px;
+
+  top: 1117px;
+  left: 1117px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+#etaUrsae {
+  position: absolute;
+
+  height: 38px;
+  width: 38px;
+
+  top: 1175px;
+  left: 1104px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 0, 0.15);
+}
+#yildun {
+  position: absolute;
+
+  height: 43px;
+  width: 43px;
+
+  top: 1038px;
+  left: 1005px;
+
+  border-radius: 50%;
+
+  /* background-color: var(--virgo); */
+  background-color: #ff000040;
+}

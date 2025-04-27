@@ -6,18 +6,18 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap'); */
 
 :root {
-  --aries: #f54f4f;
-  --taurus: #4b5320;
-  --gemini: #ffd700;
-  --cancer: #87ceeb;
-  --leo: #ffa600;
-  --virgo: #8f9779;
-  --libra: #ffb6c1;
-  --scorpio: #800000;
-  --sagittarus: #4169e1;
-  --capricorn: #36454f;
-  --aquarius: #00ffff;
-  --picses: #b19cd9;
+  --aries: #f54f4f40;
+  --taurus: #4b532040;
+  --gemini: #ffd70040;
+  --cancer: #87ceeb40;
+  --leo: #ffa60040;
+  --virgo: #8f977940;
+  --libra: #ffb6c140;
+  --scorpio: #80000040;
+  --sagittarus: #4169e140;
+  --capricorn: #36454f40;
+  --aquarius: #00ffff40;
+  --picses: #b19cd940;
 }
 
 html {
