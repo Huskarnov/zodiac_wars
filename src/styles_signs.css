@@ -137,3 +137,8 @@
   top: 180px;
   z-index: +2;
 }
+
+#playGround > div:not(.universe):hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+}

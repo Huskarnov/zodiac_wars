@@ -149,6 +149,8 @@ header {
   /* background-color: rgba(255, 0, 0, 0.616); */
   /* background-image: url('/ressources/images/logoRoundStar.png');
   background-size: cover; */
+  display: flex;
+  flex-direction: column;
 }
 header h1 {
   color: rgb(255, 255, 255);
@@ -160,11 +162,12 @@ header h1 {
   text-shadow: 1px 1px 5px #ffffff, 2px 2px 5px #000000c4, 3px 3px 5px #ffffff88,
     4px 4px 5px #0000002f;
 
-  /* background: linear-gradient(#ffffff, #504f4f); */
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-
   user-select: none;
+}
+header h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
 }
 @keyframes glow {
   0% {
@@ -212,13 +215,15 @@ header button {
 }
 header button:hover {
   /* filter: brightness(1.2); */
-  animation: glow 1s ease-in-out infinite;
+  /* animation: glow 1s ease-in-out infinite; */
+  filter: brightness(1.5);
+  cursor: pointer;
 }
 
 /* ---------------------------------------------------------------- */
 
 #playGround {
-  top: 111px;
+  top: 150px;
   position: relative;
   width: 2000px;
   height: 2000px;
@@ -267,6 +272,7 @@ header button:hover {
 
   } */
   header {
+    display: none;
     grid-template-areas:
       'top top'
       'left right';
