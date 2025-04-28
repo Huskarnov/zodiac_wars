@@ -156,37 +156,22 @@
 
   border-radius: 50%;
 
-  background-color: var(--gemini);
+  background-color: var(--pisces);
   /*  */
 }
-
-#kochab {
+#yildun {
   position: absolute;
 
-  height: 30px;
-  width: 30px;
+  height: 43px;
+  width: 43px;
 
-  top: 1122px;
-  left: 1197px;
+  top: 1038px;
+  left: 1005px;
 
   border-radius: 50%;
 
-  /* background-color: rgba(255, 0, 0, 0.15); */
-  background-color: var(--pisces);
-}
-#pherkad {
-  position: absolute;
-
-  height: 35px;
-  width: 35px;
-
-  top: 1185px;
-  left: 1195px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
-  background-color: var(--pisces);
+  /* background-color: var(--virgo); */
+  background-color: var(--taurus);
 }
 #epsilonUrsae {
   position: absolute;
@@ -200,7 +185,7 @@
   border-radius: 50%;
 
   /* background-color: rgba(255, 0, 0, 0.15); */
-  background-color: var(--pisces);
+  background-color: var(--virgo);
 }
 #zetaUrsae {
   position: absolute;
@@ -216,6 +201,36 @@
   /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--pisces);
 }
+#kochab {
+  position: absolute;
+
+  height: 30px;
+  width: 30px;
+
+  top: 1122px;
+  left: 1197px;
+
+  border-radius: 50%;
+
+  /* background-color: rgba(255, 0, 0, 0.15); */
+  background-color: var(--taurus);
+}
+
+#pherkad {
+  position: absolute;
+
+  height: 35px;
+  width: 35px;
+
+  top: 1185px;
+  left: 1195px;
+
+  border-radius: 50%;
+
+  /* background-color: rgba(255, 0, 0, 0.15); */
+  background-color: var(--scorpio);
+}
+
 #etaUrsae {
   position: absolute;
 
@@ -228,19 +243,5 @@
   border-radius: 50%;
 
   /* background-color: rgba(255, 0, 0, 0.15); */
-  background-color: var(--pisces);
-}
-#yildun {
-  position: absolute;
-
-  height: 43px;
-  width: 43px;
-
-  top: 1038px;
-  left: 1005px;
-
-  border-radius: 50%;
-
-  /* background-color: var(--virgo); */
-  background-color: var(--pisces);
+  background-color: var(--libra);
 }
