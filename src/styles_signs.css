@@ -139,109 +139,219 @@
 }
 
 #playGround > div:not(.universe):hover {
-  filter: brightness(1.3);
+  filter: brightness(2);
   cursor: pointer;
 }
 /* --------------------ursa minor--------------------- */
 /* --------------------ursa minor--------------------- */
 /* --------------------ursa minor--------------------- */
-#polaris {
+.star {
   position: absolute;
+  border-radius: 50%;
+}
 
+#polaris {
   height: 105px;
   width: 105px;
-
   top: 925px;
   left: 950px;
-
-  border-radius: 50%;
-
   background-color: var(--capricorn);
-  /*  */
 }
 #yildun {
-  position: absolute;
-
   height: 43px;
   width: 43px;
-
   top: 1038px;
   left: 1005px;
-
-  border-radius: 50%;
-
-  /* background-color: var(--virgo); */
   background-color: var(--capricorn);
 }
 #epsilonUrsae {
-  position: absolute;
-
   height: 35px;
   width: 35px;
-
   top: 1085px;
   left: 1047px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--aries);
 }
 #zetaUrsae {
-  position: absolute;
-
   height: 32px;
   width: 32px;
-
   top: 1117px;
   left: 1117px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--pisces);
 }
 #kochab {
-  position: absolute;
-
   height: 30px;
   width: 30px;
-
   top: 1122px;
   left: 1197px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--taurus);
 }
 
 #pherkad {
-  position: absolute;
-
   height: 35px;
   width: 35px;
-
   top: 1185px;
   left: 1195px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--scorpio);
 }
 
 #etaUrsae {
-  position: absolute;
-
   height: 38px;
   width: 38px;
-
   top: 1175px;
   left: 1104px;
-
-  border-radius: 50%;
-
-  /* background-color: rgba(255, 0, 0, 0.15); */
   background-color: var(--libra);
+}
+
+/* -----------serpens caput------------- */
+/* -----------serpens caput------------- */
+/* -----------serpens caput------------- */
+
+#unukalhai {
+  height: 38px;
+  width: 38px;
+  top: 1402px;
+  left: 1064px;
+  background-color: var(--libra);
+}
+#betaSerpentis {
+  height: 38px;
+  width: 38px;
+  top: 1411px;
+  left: 1162px;
+  background-color: var(--virgo);
+}
+#gammaSerpentis {
+  height: 39px;
+  width: 39px;
+  top: 1467px;
+  left: 1178px;
+  background-color: var(--virgo);
+}
+#deltaSerpentis {
+  height: 43px;
+  width: 43px;
+  top: 1565px;
+  left: 1215px;
+  background-color: var(--virgo);
+}
+#epsilonSerpentis {
+  height: 49px;
+  width: 49px;
+  top: 1563px;
+  left: 1350px;
+  background-color: var(--virgo);
+}
+#zetaSerpentis {
+  height: 46px;
+  width: 46px;
+  top: 1513px;
+  left: 1397px;
+  background-color: var(--virgo);
+}
+#etaSerpentis {
+  height: 40px;
+  width: 40px;
+  top: 1588px;
+  left: 1420px;
+  background-color: var(--virgo);
+}
+#thetaSerpentis {
+  height: 55px;
+  width: 55px;
+  top: 1641px;
+  left: 1415px;
+  background-color: var(--virgo);
+}
+/* berenices */
+#betaBerenices {
+  height: 55px;
+  width: 55px;
+  top: 1465px;
+  left: 1270px;
+  background-color: var(--virgo);
+}
+#alphaBerenices {
+  height: 42px;
+  width: 42px;
+  top: 1343px;
+  left: 1403px;
+  background-color: var(--leo);
+}
+#gammaBerenices {
+  height: 45px;
+  width: 45px;
+  top: 1451px;
+  left: 1533px;
+  background-color: var(--leo);
+}
+/* ``````````````````leo minor */
+/* ``````````````````leo minor */
+/* ``````````````````leo minor */
+
+#alphaLeonisMinoris {
+  height: 52px;
+  width: 52px;
+  top: 1252px;
+  left: 1494px;
+  background-color: var(--leo);
+}
+#BetaLeonisMinoris {
+  height: 52px;
+  width: 52px;
+  top: 1043px;
+  left: 1510px;
+  background-color: var(--leo);
+}
+#epsilonLeonisMinoris {
+  height: 51px;
+  width: 51px;
+  top: 915px;
+  left: 1504px;
+  background-color: var(--leo);
+}
+#kappaLeonisMinoris {
+  height: 54px;
+  width: 54px;
+  top: 930px;
+  left: 1590px;
+  background-color: var(--leo);
+}
+#zetaLeonisMinoris {
+  height: 53px;
+  width: 53px;
+  top: 760px;
+  left: 1575px;
+  background-color: var(--cancer);
+}
+/* --------lynx------ */
+/* --------lynx------ */
+/* --------lynx------ */
+
+#alsciaukat {
+  height: 53px;
+  width: 53px;
+  top: 854px;
+  left: 1309px;
+  background-color: var(--cancer);
+}
+#phialphaLyncis {
+  height: 36px;
+  width: 36px;
+  top: 799px;
+  left: 1309px;
+  background-color: var(--cancer);
+}
+#epsilonLyncis {
+  height: 65px;
+  width: 65px;
+  top: 799px;
+  left: 1359px;
+  background-color: var(--cancer);
+}
+#nuLyncis {
+  height: 30px;
+  width: 30px;
+  top: 760px;
+  left: 1385px;
+  background-color: var(--cancer);
 }
