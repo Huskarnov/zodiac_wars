@@ -137,6 +137,8 @@ header {
 
   padding: 5px 10px 5px 10px;
   z-index: 5;
+
+  user-select: none;
 }
 
 .headerLeft {
@@ -161,8 +163,6 @@ header h1 {
 
   text-shadow: 1px 1px 5px #ffffff, 2px 2px 5px #000000c4, 3px 3px 5px #ffffff88,
     4px 4px 5px #0000002f;
-
-  user-select: none;
 }
 header h2 {
   color: rgb(255, 255, 255);
