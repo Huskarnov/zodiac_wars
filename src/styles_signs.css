@@ -355,3 +355,318 @@
   left: 1385px;
   background-color: var(--cancer);
 }
+#deltaLyncis {
+  height: 47px;
+  width: 47px;
+  top: 760px;
+  left: 1453px;
+  background-color: var(--cancer);
+}
+#kappaLyncis {
+  height: 67px;
+  width: 67px;
+  top: 677px;
+  left: 1556px;
+  background-color: var(--cancer);
+}
+#lambdaLyncis {
+  height: 44px;
+  width: 44px;
+  top: 578px;
+  left: 1605px;
+  background-color: var(--cancer);
+}
+#omegaLyncis {
+  height: 57px;
+  width: 57px;
+  top: 547px;
+  left: 1656px;
+  background-color: var(--cancer);
+}
+/* ------auriga-------- */
+/* ------auriga-------- */
+/* ------auriga-------- */
+#capella {
+  height: 48px;
+  width: 48px;
+  top: 448px;
+  left: 1058px;
+  background-color: var(--taurus);
+}
+#menkalinan {
+  height: 64px;
+  width: 64px;
+  top: 514px;
+  left: 1165px;
+  background-color: var(--gemini);
+}
+#mahasim {
+  height: 52px;
+  width: 52px;
+  top: 582px;
+  left: 1261px;
+  background-color: var(--gemini);
+}
+#hassaleh {
+  height: 59px;
+  width: 59px;
+  top: 548px;
+  left: 1424px;
+  background-color: var(--cancer);
+}
+#almaaz {
+  height: 54px;
+  width: 54px;
+  top: 435px;
+  left: 1410px;
+  background-color: var(--gemini);
+}
+#thetaAurigae {
+  height: 60px;
+  width: 60px;
+  top: 405px;
+  left: 1209px;
+  background-color: var(--gemini);
+}
+/* ------cassiopeia------- */
+/* ------cassiopeia------- */
+/* ------cassiopeia------- */
+#schedar {
+  height: 57px;
+  width: 57px;
+  top: 618px;
+  left: 784px;
+  background-color: var(--aries);
+}
+#saph {
+  height: 54px;
+  width: 54px;
+  top: 448px;
+  left: 757px;
+  background-color: var(--aries);
+}
+#tsih {
+  height: 53px;
+  width: 53px;
+  top: 452px;
+  left: 917px;
+  background-color: var(--taurus);
+}
+#ruchbah {
+  height: 67px;
+  width: 67px;
+  top: 326px;
+  left: 966px;
+  background-color: var(--taurus);
+}
+#segin {
+  height: 67px;
+  width: 67px;
+  top: 299px;
+  left: 1145px;
+  background-color: var(--taurus);
+}
+/* --------triangulum------ */
+/* --------triangulum------ */
+/* --------triangulum------ */
+#betaTrianguli {
+  height: 53px;
+  width: 53px;
+  top: 575px;
+  left: 469px;
+  background-color: var(--pisces);
+}
+#alphaTrianguli {
+  height: 57px;
+  width: 57px;
+  top: 362px;
+  left: 749px;
+  background-color: var(--aries);
+}
+#gammaTrianguli {
+  height: 69px;
+  width: 69px;
+  top: 277px;
+  left: 684px;
+  background-color: var(--aries);
+}
+/* ------pegasus------- */
+/* ------pegasus------- */
+/* ------pegasus------- */
+#enif {
+  height: 52px;
+  width: 52px;
+  top: 808px;
+  left: 326px;
+  background-color: var(--aquarius);
+}
+#scheat {
+  height: 27px;
+  width: 27px;
+  top: 851px;
+  left: 496px;
+  background-color: var(--aquarius);
+}
+#markab {
+  height: 52px;
+  width: 52px;
+  top: 693px;
+  left: 527px;
+  background-color: var(--pisces);
+}
+#algenib {
+  height: 40px;
+  width: 40px;
+  top: 650px;
+  left: 357px;
+  background-color: var(--pisces);
+}
+#matar {
+  height: 33px;
+  width: 33px;
+  top: 951px;
+  left: 597px;
+  background-color: var(--aquarius);
+}
+#homam {
+  height: 45px;
+  width: 45px;
+  top: 814px;
+  left: 545px;
+  background-color: var(--pisces);
+}
+#salm {
+  height: 65px;
+  width: 65px;
+  top: 872px;
+  left: 680px;
+  background-color: var(--pisces);
+}
+#niham {
+  height: 59px;
+  width: 59px;
+  top: 646px;
+  left: 688px;
+  background-color: var(--aries);
+}
+#iotaPegasi {
+  height: 57px;
+  width: 57px;
+  top: 715px;
+  left: 756px;
+  background-color: var(--aries);
+}
+/* ----delphinus----- */
+/* ----delphinus----- */
+/* ----delphinus----- */
+#rotanev {
+  height: 49px;
+  width: 49px;
+  top: 905px;
+  left: 460px;
+  background-color: var(--capricorn);
+}
+#sualocin {
+  height: 67px;
+  width: 67px;
+  top: 970px;
+  left: 400px;
+  background-color: var(--capricorn);
+}
+#deneb {
+  height: 57px;
+  width: 57px;
+  top: 1064px;
+  left: 453px;
+  background-color: var(--capricorn);
+}
+#gammaDelphini {
+  height: 58px;
+  width: 58px;
+  top: 1275px;
+  left: 588px;
+  background-color: var(--sagittarus);
+}
+#deltaDelphini {
+  height: 58px;
+  width: 58px;
+  top: 983px;
+  left: 488px;
+  background-color: var(--capricorn);
+}
+/* -------lyra-------- */
+/* -------lyra-------- */
+/* -------lyra-------- */
+#vega {
+  height: 50px;
+  width: 50px;
+  top: 1239px;
+  left: 365px;
+  background-color: var(--capricorn);
+}
+#sheliak {
+  height: 62px;
+  width: 62px;
+  top: 1261px;
+  left: 445px;
+  background-color: var(--capricorn);
+}
+#sulafat {
+  height: 33px;
+  width: 33px;
+  top: 1188px;
+  left: 424px;
+  background-color: var(--capricorn);
+}
+#deltaLyrae {
+  height: 47px;
+  width: 47px;
+  top: 1360px;
+  left: 460px;
+  background-color: var(--capricorn);
+}
+#zetaLyrae {
+  height: 39px;
+  width: 39px;
+  top: 1458px;
+  left: 636px;
+  background-color: var(--capricorn);
+}
+#epsilonLyrae {
+  height: 50px;
+  width: 50px;
+  top: 1363px;
+  left: 624px;
+  background-color: var(--capricorn);
+}
+/* -------scutum----- */
+/* -------scutum----- */
+/* -------scutum----- */
+#alphaScuti {
+  height: 59px;
+  width: 59px;
+  top: 1448px;
+  left: 489px;
+  background-color: var(--sagittarus);
+}
+#betaScuti {
+  height: 44px;
+  width: 44px;
+  top: 1594px;
+  left: 664px;
+  background-color: var(--sagittarus);
+}
+#deltaScuti {
+  height: 40px;
+  width: 40px;
+  top: 1618px;
+  left: 829px;
+  background-color: var(--sagittarus);
+}
+#gammaScuti {
+  height: 41px;
+  width: 41px;
+  top: 1532px;
+  left: 703px;
+  background-color: var(--sagittarus);
+}
