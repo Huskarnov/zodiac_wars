@@ -630,14 +630,14 @@
   width: 39px;
   top: 1458px;
   left: 636px;
-  background-color: var(--capricorn);
+  background-color: var(--sagittarus);
 }
 #epsilonLyrae {
   height: 50px;
   width: 50px;
   top: 1363px;
   left: 624px;
-  background-color: var(--capricorn);
+  background-color: var(--sagittarus);
 }
 /* -------scutum----- */
 /* -------scutum----- */
@@ -654,14 +654,14 @@
   width: 44px;
   top: 1594px;
   left: 664px;
-  background-color: var(--sagittarus);
+  background-color: var(--scorpio);
 }
 #deltaScuti {
   height: 40px;
   width: 40px;
   top: 1618px;
   left: 829px;
-  background-color: var(--sagittarus);
+  background-color: var(--scorpio);
 }
 #gammaScuti {
   height: 41px;
@@ -670,3 +670,204 @@
   left: 703px;
   background-color: var(--sagittarus);
 }
+/* ----cauda serpens */
+/* ----cauda serpens */
+/* ----cauda serpens */
+#iotaSerpentis {
+  height: 51px;
+  width: 51px;
+  top: 1399px;
+  left: 756px;
+  background-color: var(--sagittarus);
+}
+#xiSerpentis {
+  height: 60px;
+  width: 60px;
+  top: 1473px;
+  left: 848px;
+  background-color: var(--scorpio);
+}
+#muSerpentis {
+  height: 57px;
+  width: 57px;
+  top: 1605px;
+  left: 917px;
+  background-color: var(--scorpio);
+}
+#rhoSerpentis {
+  height: 46px;
+  width: 46px;
+  top: 1672px;
+  left: 927px;
+  background-color: var(--scorpio);
+}
+#sigmaSerpentis {
+  height: 61px;
+  width: 61px;
+  top: 1624px;
+  left: 989px;
+  background-color: var(--libra);
+}
+/* ----draco----- */
+/* ----draco----- */
+/* ----draco----- */
+#etamin {
+  height: 48px;
+  width: 48px;
+  top: 1540px;
+  left: 1017px;
+  background-color: var(--libra);
+}
+#rastaban {
+  height: 49px;
+  width: 49px;
+  top: 1530px;
+  left: 1087px;
+  background-color: var(--libra);
+}
+#altais {
+  height: 27px;
+  width: 27px;
+  top: 1483px;
+  left: 1090px;
+  background-color: var(--libra);
+}
+#eldib {
+  height: 27px;
+  width: 27px;
+  top: 1474px;
+  left: 1029px;
+  background-color: var(--libra);
+}
+#athebyne {
+  height: 44px;
+  width: 44px;
+  top: 1291px;
+  left: 909px;
+  background-color: var(--libra);
+}
+#thuban {
+  height: 52px;
+  width: 52px;
+  top: 1246px;
+  left: 983px;
+  background-color: var(--libra);
+}
+#tyl {
+  height: 39px;
+  width: 39px;
+  top: 1326px;
+  left: 1088px;
+  background-color: var(--libra);
+}
+#gianfar {
+  height: 56px;
+  width: 56px;
+  top: 1365px;
+  left: 1231px;
+  background-color: var(--virgo);
+}
+#grumium {
+  height: 59px;
+  width: 59px;
+  top: 1162px;
+  left: 1322px;
+  background-color: var(--leo);
+}
+#kuma {
+  height: 59px;
+  width: 59px;
+  top: 1015px;
+  left: 1294px;
+  background-color: var(--leo);
+}
+#arrakis {
+  height: 58px;
+  width: 58px;
+  top: 935px;
+  left: 1313px;
+  background-color: var(--leo);
+}
+/* ----ursa major---- */
+/* ----ursa major---- */
+/* ----ursa major---- */
+#dubhe {
+  height: 61px;
+  width: 61px;
+  top: 661px;
+  left: 945px;
+  background-color: var(--taurus);
+}
+#merak {
+  height: 59px;
+  width: 59px;
+  top: 721px;
+  left: 978px;
+  background-color: var(--taurus);
+}
+#phad {
+  height: 53px;
+  width: 53px;
+  top: 834px;
+  left: 1114px;
+  background-color: var(--gemini);
+}
+#megrez {
+  height: 57px;
+  width: 57px;
+  top: 786px;
+  left: 1148px;
+  background-color: var(--gemini);
+}
+#alioth {
+  height: 45px;
+  width: 45px;
+  top: 698px;
+  left: 1036px;
+  background-color: var(--taurus);
+}
+#mizar {
+  height: 46px;
+  width: 46px;
+  top: 910px;
+  left: 1137px;
+  background-color: var(--gemini);
+}
+#alkaid {
+  height: 59px;
+  width: 59px;
+  top: 935px;
+  left: 1190px;
+  background-color: var(--gemini);
+}
+#tania {
+  height: 65px;
+  width: 65px;
+  top: 685px;
+  left: 1260px;
+  background-color: var(--gemini);
+}
+#alulaBorealis {
+  height: 47px;
+  width: 47px;
+  top: 646px;
+  left: 1159px;
+  background-color: var(--gemini);
+}
+#alulaAustralis {
+  height: 44px;
+  width: 44px;
+  top: 602px;
+  left: 1052px;
+  background-color: var(--taurus);
+}
+/* -----camelopardus---- */
+/* -----camelopardus---- */
+/* -----camelopardus---- */
+/* #alulaAustralis {
+  height: 44px;
+  width: 44px;
+  top: 602px;
+  left: 1052px;
+  background-color: var(--taurus);
+} */
