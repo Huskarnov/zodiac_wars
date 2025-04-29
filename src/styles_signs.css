@@ -155,14 +155,14 @@
   width: 105px;
   top: 925px;
   left: 950px;
-  background-color: var(--capricorn);
+  background-color: var(--aries);
 }
 #yildun {
   height: 43px;
   width: 43px;
   top: 1038px;
   left: 1005px;
-  background-color: var(--capricorn);
+  background-color: var(--aries);
 }
 #epsilonUrsae {
   height: 35px;
@@ -176,14 +176,14 @@
   width: 32px;
   top: 1117px;
   left: 1117px;
-  background-color: var(--pisces);
+  background-color: var(--aries);
 }
 #kochab {
   height: 30px;
   width: 30px;
   top: 1122px;
   left: 1197px;
-  background-color: var(--taurus);
+  background-color: var(--leo);
 }
 
 #pherkad {
@@ -191,7 +191,7 @@
   width: 35px;
   top: 1185px;
   left: 1195px;
-  background-color: var(--scorpio);
+  background-color: var(--virgo);
 }
 
 #etaUrsae {
@@ -282,7 +282,7 @@
   width: 45px;
   top: 1451px;
   left: 1533px;
-  background-color: var(--leo);
+  background-color: var(--virgo);
 }
 /* ``````````````````leo minor */
 /* ``````````````````leo minor */
@@ -564,7 +564,7 @@
   width: 49px;
   top: 905px;
   left: 460px;
-  background-color: var(--capricorn);
+  background-color: var(--aquarius);
 }
 #sualocin {
   height: 67px;
@@ -706,7 +706,7 @@
   width: 61px;
   top: 1624px;
   left: 989px;
-  background-color: var(--libra);
+  background-color: var(--scorpio);
 }
 /* ----draco----- */
 /* ----draco----- */
@@ -864,10 +864,97 @@
 /* -----camelopardus---- */
 /* -----camelopardus---- */
 /* -----camelopardus---- */
-/* #alulaAustralis {
-  height: 44px;
-  width: 44px;
-  top: 602px;
-  left: 1052px;
-  background-color: var(--taurus);
-} */
+#betaCamelopardalis {
+  height: 49px;
+  width: 49px;
+  top: 1013px;
+  left: 626px;
+  background-color: var(--aquarius);
+}
+#csCamelopardalis {
+  height: 42px;
+  width: 42px;
+  top: 985px;
+  left: 730px;
+  background-color: var(--aquarius);
+}
+#alphaCamelopardalis {
+  height: 66px;
+  width: 66px;
+  top: 977px;
+  left: 822px;
+  background-color: var(--aquarius);
+}
+#gammaCamelopardalis {
+  height: 56px;
+  width: 56px;
+  top: 865px;
+  left: 769px;
+  background-color: var(--pisces);
+}
+#iotaCamelopardalis {
+  height: 42px;
+  width: 42px;
+  top: 800px;
+  left: 698px;
+  background-color: var(--pisces);
+}
+#sigmaCamelopardalis {
+  height: 50px;
+  width: 50px;
+  top: 754px;
+  left: 587px;
+  background-color: var(--pisces);
+}
+#zetaCamelopardalis {
+  height: 57px;
+  width: 57px;
+  top: 775px;
+  left: 889px;
+  background-color: var(--aries);
+}
+#phiCamelopardalis {
+  height: 51px;
+  width: 51px;
+  top: 849px;
+  left: 1021px;
+  background-color: var(--aries);
+}
+/* -----cepheus----- */
+/* -----cepheus----- */
+/* -----cepheus----- */
+#alderamin {
+  height: 67px;
+  width: 67px;
+  top: 1236px;
+  left: 647px;
+  background-color: var(--sagittarus);
+}
+#alfirk {
+  height: 39px;
+  width: 39px;
+  top: 1289px;
+  left: 760px;
+  background-color: var(--sagittarus);
+}
+#errai {
+  height: 46px;
+  width: 46px;
+  top: 1200px;
+  left: 830px;
+  background-color: var(--sagittarus);
+}
+#alradif {
+  height: 46px;
+  width: 46px;
+  top: 1052px;
+  left: 860px;
+  background-color: var(--aries);
+}
+#epsilonCephei {
+  height: 46px;
+  width: 46px;
+  top: 1142px;
+  left: 725px;
+  background-color: var(--sagittarus);
+}
