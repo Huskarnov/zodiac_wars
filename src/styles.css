@@ -148,11 +148,13 @@ header {
 }
 
 .headerMid {
-  /* background-color: rgba(255, 0, 0, 0.616); */
-  /* background-image: url('/ressources/images/logoRoundStar.png');
-  background-size: cover; */
   display: flex;
   flex-direction: column;
+
+  background-image: url(/ressources/images/logo.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 header h1 {
   color: rgb(255, 255, 255);
