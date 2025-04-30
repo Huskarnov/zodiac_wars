@@ -1,4 +1,5 @@
 import ranniWelcome from '/ressources/audio/ranniWelcome.mp3';
+import audioTheme from '/ressources/audio/classictheme.mp3';
 
 document.addEventListener('DOMContentLoaded', () => {
   let factionChoice;
@@ -21,11 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const allSigns = [...firstSixSigns, ...secondSixSigns];
 
   const anAudio = new Audio(ranniWelcome);
+  const themeAudio = new Audio(audioTheme);
 
   joinButton.addEventListener('click', () => {
     introPanel.style.display = 'none';
     zodiacChoice.style.display = 'flex';
     anAudio.play();
+    themeAudio.play();
   });
 
   allSigns.forEach((image, index) => {
