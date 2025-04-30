@@ -115,6 +115,8 @@ main {
   /* left: 50%; */
 
   /* background-color: goldenrod; */
+  display: flex;
+  justify-content: center;
 }
 
 header {
