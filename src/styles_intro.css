@@ -1,0 +1,120 @@
+dialog {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 500px;
+
+  background-color: rgba(0, 0, 0, 0.829);
+  border: 10px solid rgba(245, 179, 179, 0.034);
+  border-radius: 50%;
+
+  /* user-select: none; */
+
+  /* background-image: url(/ressources/images/logo.webp);
+  background-size: cover; */
+}
+
+dialog > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  outline: none;
+}
+
+/* ---------intro---------- */
+/* ---------intro---------- */
+.introPanel {
+  display: flex; /* flex */
+  animation: appear 0.5s ease-in 1;
+}
+.introPanel > p {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px #ffffff, 2px 2px 5px #000000c4, 3px 3px 5px #ffffff88,
+    4px 4px 5px #0000002f;
+}
+
+.introPanel > p:nth-child(1) {
+  font-size: 2rem;
+
+  margin-bottom: 20px;
+}
+.introPanel > p:nth-child(2) {
+  font-size: 1.5rem;
+
+  margin-bottom: 20px;
+}
+
+.introPanel > p:nth-child(3) {
+  font-size: 2rem;
+
+  margin-bottom: 40px;
+}
+
+.introPanel > button {
+  font-size: 2rem;
+  padding: 5px 40px;
+  border-radius: 20px;
+
+  box-shadow: inset -2px -2px 11px #000000c4;
+}
+.introPanel > button:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+/* ------zodiac choice---------- */
+/* ------zodiac choice---------- */
+
+.zodiacChoice {
+  display: none; /* flex */
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  animation: appear 0.5s ease-in 1;
+}
+
+.zodiacChoice > p {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px #ffffff, 2px 2px 5px #000000c4, 3px 3px 5px #ffffff88,
+    4px 4px 5px #0000002f;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.zodiacChoice div {
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+}
+.zodiacChoice img {
+  width: 100px;
+  height: 100px;
+
+  margin-left: 20px;
+}
+.zodiacChoice img:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+/* ---------animations --------- */
+@keyframes appear {
+  0% {
+    filter: brightness(0);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}

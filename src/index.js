@@ -2,9 +2,11 @@
 
 import './styles.css';
 import './styles_signs.css';
+import './styles_intro.css';
 
 import './modules/global_module';
-import ranniWelcome from '../ressources/audio/ranniWelcome.wav';
+import './modules/intro_module';
+// import ranniWelcome from '../ressources/audio/ranniWelcome.wav';
 
 // const playButton = document.querySelector('.factionImage');
 
@@ -13,3 +15,11 @@ import ranniWelcome from '../ressources/audio/ranniWelcome.wav';
 // playButton.addEventListener('click', () => {
 //   audio.play();
 // });
+
+const dialog = document.querySelector('dialog');
+
+dialog.show();
+
+setTimeout(() => {
+  dialog.close();
+}, 5000);
