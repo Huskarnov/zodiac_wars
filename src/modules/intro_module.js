@@ -1,5 +1,8 @@
-(function introIIFE() {
+import ranniWelcome from '/ressources/audio/ranniWelcome.mp3';
+
+document.addEventListener('DOMContentLoaded', () => {
   let factionChoice;
+  const factionImage = document.querySelector('.factionImage');
 
   const header = document.querySelector('header');
   const playGround = document.querySelector('#playGround');
@@ -17,9 +20,12 @@
   );
   const allSigns = [...firstSixSigns, ...secondSixSigns];
 
+  const anAudio = new Audio(ranniWelcome);
+
   joinButton.addEventListener('click', () => {
     introPanel.style.display = 'none';
     zodiacChoice.style.display = 'flex';
+    anAudio.play();
   });
 
   allSigns.forEach((image, index) => {
@@ -27,51 +33,51 @@
       switch (index) {
         case 0:
           factionChoice = 'aries';
-          console.log(factionChoice);
+          factionImage.src = `/18f83c66346acfa2fff3.png`;
           break;
         case 1:
           factionChoice = 'taurus';
-          console.log(factionChoice);
+          factionImage.src = `/71bdb7e3ecbbb8fa3512.png`;
           break;
         case 2:
           factionChoice = 'gemini';
-          console.log(factionChoice);
+          factionImage.src = `/b1706e8da823460af055.png`;
           break;
         case 3:
           factionChoice = 'cancer';
-          console.log(factionChoice);
+          factionImage.src = `/d145a4b1f5612aa6cb59.png`;
           break;
         case 4:
           factionChoice = 'leo';
-          console.log(factionChoice);
+          factionImage.src = `/434ff012a907ac608787.png`;
           break;
         case 5:
           factionChoice = 'virgo';
-          console.log(factionChoice);
+          factionImage.src = `/494ced40f74322a1c4c2.png`;
           break;
         case 6:
           factionChoice = 'libra';
-          console.log(factionChoice);
+          factionImage.src = `/30348ee267d906b7c438.png`;
           break;
         case 7:
           factionChoice = 'scorpio';
-          console.log(factionChoice);
+          factionImage.src = `/d360b3465f83d228d48b.png`;
           break;
         case 8:
           factionChoice = 'sagittarus';
-          console.log(factionChoice);
+          factionImage.src = `/e17c58e812c8fbbd8db5.png`;
           break;
         case 9:
           factionChoice = 'capricornus';
-          console.log(factionChoice);
+          factionImage.src = `/0f18bdea3038f4073340.png`;
           break;
         case 10:
           factionChoice = 'aquarius';
-          console.log(factionChoice);
+          factionImage.src = `/8aa3b3a765c74796be05.png`;
           break;
         case 11:
           factionChoice = 'pisces';
-          console.log(factionChoice);
+          factionImage.src = `/0df6d7d963d0b98cc141.png`;
           break;
       }
 
@@ -80,4 +86,8 @@
       dialogIntro.close();
     });
   });
-})();
+});
+
+// (function introIIFE() {
+
+// })();

@@ -46,13 +46,12 @@ module.exports = {
         },
       },
       {
-        test: /\.(wav|mp3)$/i,
-        type: 'asset/resource',
+        test: /\.mp3$/i,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
-          outputPath: 'media', // Optional: Output audio files to a 'media' folder
-          publicPath: 'media', // Optional: Ensure correct public path in the browser
+          // outputPath: 'media',
+          // publicPath: 'media',
         },
       },
     ],

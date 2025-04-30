@@ -1,6 +1,6 @@
 dialog {
   position: fixed;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   z-index: 10;
   left: 50%;
