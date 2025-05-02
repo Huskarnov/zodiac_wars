@@ -142,5 +142,6 @@ let stars = {
 universeStars.forEach((starElement) => {
   starElement.addEventListener('mouseover', (event) => {
     console.log(event.currentTarget.id);
+    navigator.clipboard.writeText(`${event.currentTarget.id}`);
   });
 });
