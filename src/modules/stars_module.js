@@ -14,6 +14,7 @@ class Star {
     attacking,
     attackingHealth,
     attackingDamage,
+    // adjacentHomeworlds,
     ...adjacentStars
   ) {
     this.name = name;
@@ -96,6 +97,7 @@ class Star {
 // intialize;
 
 let stars = {
+  // ursa minor
   polaris: new Star(
     'polaris',
     false,
@@ -108,16 +110,20 @@ let stars = {
     5,
     'yildun'
   ),
-  vega: new Star(
-    'vega',
+  // cauda
+  thetaSerpentis: new Star(
+    'thetaSerpentis',
     false,
-    document.querySelector('#vega'),
-    'pisces',
+    document.querySelector('#thetaSerpentis'),
+    'gemini',
     100,
     6,
     'scorpio',
     200,
-    3
+    3,
+    'etaSerpentis',
+    'epsilonSerpentis',
+    'gemini'
   ),
 };
 
