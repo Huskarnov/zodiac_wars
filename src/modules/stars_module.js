@@ -92,6 +92,15 @@ class Star {
       this.defendingAvatar.damage = user.damage * power;
     }
   }
+
+  checkContact(faction) {
+    const acceptedSigns = this.adjacentStars.filter((item) => {
+      // if (item !== 'aries' && item !== 'taurus' etc ...)
+    });
+    const neighborhood = this.adjacentStars.filter((item) => {
+      // if (item === 'aries' || item === 'taurus' ... etc )
+    });
+  }
 }
 
 // intialize;
