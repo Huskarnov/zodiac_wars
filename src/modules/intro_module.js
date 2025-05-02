@@ -1,93 +1,106 @@
 import ranniWelcome from '/ressources/audio/ranniWelcome.mp3';
 import audioTheme from '/ressources/audio/classictheme.mp3';
 
-document.addEventListener('DOMContentLoaded', () => {
-  let factionChoice;
-  const factionImage = document.querySelector('.factionImage');
+import ariesPic from '/ressources/images/aries.png';
+import taurusPic from '/ressources/images/taurus.png';
+import geminiPic from '/ressources/images/gemini.png';
+import cancerPic from '/ressources/images/cancer.png';
+import leoPic from '/ressources/images/leo.png';
+import virgoPic from '/ressources/images/virgo.png';
+import libraPic from '/ressources/images/libra.png';
+import scorpioPic from '/ressources/images/scorpio.png';
+import sagittarusPic from '/ressources/images/sagittarus.png';
+import capricornusPic from '/ressources/images/capricornus.png';
+import aquariusPic from '/ressources/images/aquarius.png';
+import piscesPic from '/ressources/images/pisces.png';
 
-  const header = document.querySelector('header');
-  const playGround = document.querySelector('#playGround');
-  const dialogIntro = document.querySelector('dialog');
+let factionChoice;
 
-  const introPanel = document.querySelector('.introPanel');
-  const joinButton = document.querySelector('.introPanel button');
+// document.addEventListener('DOMContentLoaded', () => {});
+const factionImage = document.querySelector('.factionImage');
 
-  const zodiacChoice = document.querySelector('.zodiacChoice');
-  const firstSixSigns = Array.from(
-    document.querySelector('.zodiacChoice div:nth-Child(1)').children
-  );
-  const secondSixSigns = Array.from(
-    document.querySelector('.zodiacChoice div:nth-Child(3)').children
-  );
-  const allSigns = [...firstSixSigns, ...secondSixSigns];
+const header = document.querySelector('header');
+const playGround = document.querySelector('#playGround');
+const dialogIntro = document.querySelector('dialog');
 
-  const anAudio = new Audio(ranniWelcome);
-  const themeAudio = new Audio(audioTheme);
+const introPanel = document.querySelector('.introPanel');
+const joinButton = document.querySelector('.introPanel button');
 
-  joinButton.addEventListener('click', () => {
-    introPanel.style.display = 'none';
-    zodiacChoice.style.display = 'flex';
-    anAudio.play();
-    themeAudio.play();
-  });
+const zodiacChoice = document.querySelector('.zodiacChoice');
+const firstSixSigns = Array.from(
+  document.querySelector('.zodiacChoice div:nth-Child(1)').children
+);
+const secondSixSigns = Array.from(
+  document.querySelector('.zodiacChoice div:nth-Child(3)').children
+);
+const allSigns = [...firstSixSigns, ...secondSixSigns];
 
-  allSigns.forEach((image, index) => {
-    image.addEventListener('click', (event) => {
-      switch (index) {
-        case 0:
-          factionChoice = 'aries';
-          factionImage.src = `/18f83c66346acfa2fff3.png`;
-          break;
-        case 1:
-          factionChoice = 'taurus';
-          factionImage.src = `/71bdb7e3ecbbb8fa3512.png`;
-          break;
-        case 2:
-          factionChoice = 'gemini';
-          factionImage.src = `/b1706e8da823460af055.png`;
-          break;
-        case 3:
-          factionChoice = 'cancer';
-          factionImage.src = `/d145a4b1f5612aa6cb59.png`;
-          break;
-        case 4:
-          factionChoice = 'leo';
-          factionImage.src = `/434ff012a907ac608787.png`;
-          break;
-        case 5:
-          factionChoice = 'virgo';
-          factionImage.src = `/494ced40f74322a1c4c2.png`;
-          break;
-        case 6:
-          factionChoice = 'libra';
-          factionImage.src = `/30348ee267d906b7c438.png`;
-          break;
-        case 7:
-          factionChoice = 'scorpio';
-          factionImage.src = `/d360b3465f83d228d48b.png`;
-          break;
-        case 8:
-          factionChoice = 'sagittarus';
-          factionImage.src = `/e17c58e812c8fbbd8db5.png`;
-          break;
-        case 9:
-          factionChoice = 'capricornus';
-          factionImage.src = `/0f18bdea3038f4073340.png`;
-          break;
-        case 10:
-          factionChoice = 'aquarius';
-          factionImage.src = `/8aa3b3a765c74796be05.png`;
-          break;
-        case 11:
-          factionChoice = 'pisces';
-          factionImage.src = `/0df6d7d963d0b98cc141.png`;
-          break;
-      }
+const anAudio = new Audio(ranniWelcome);
+const themeAudio = new Audio(audioTheme);
 
-      header.style.display = 'grid';
-      playGround.style.display = 'block';
-      dialogIntro.close();
-    });
+joinButton.addEventListener('click', () => {
+  introPanel.style.display = 'none';
+  zodiacChoice.style.display = 'flex';
+  anAudio.play();
+  // themeAudio.play();
+});
+
+allSigns.forEach((image, index) => {
+  image.addEventListener('click', (event) => {
+    switch (index) {
+      case 0:
+        factionChoice = 'ariesPic';
+        factionImage.src = ariesPic;
+        break;
+      case 1:
+        factionChoice = 'taurus';
+        factionImage.src = taurusPic;
+        break;
+      case 2:
+        factionChoice = 'gemini';
+        factionImage.src = geminiPic;
+        break;
+      case 3:
+        factionChoice = 'cancer';
+        factionImage.src = cancerPic;
+        break;
+      case 4:
+        factionChoice = 'leo';
+        factionImage.src = leoPic;
+        break;
+      case 5:
+        factionChoice = 'virgo';
+        factionImage.src = virgoPic;
+        break;
+      case 6:
+        factionChoice = 'libra';
+        factionImage.src = libraPic;
+        break;
+      case 7:
+        factionChoice = 'scorpio';
+        factionImage.src = scorpioPic;
+        break;
+      case 8:
+        factionChoice = 'sagittarus';
+        factionImage.src = sagittarusPic;
+        break;
+      case 9:
+        factionChoice = 'capricornus';
+        factionImage.src = capricornusPic;
+        break;
+      case 10:
+        factionChoice = 'aquarius';
+        factionImage.src = aquariusPic;
+        break;
+      case 11:
+        factionChoice = 'pisces';
+        factionImage.src = piscesPic;
+        break;
+    }
+
+    header.style.display = 'grid';
+    playGround.style.display = 'block';
+    dialogIntro.close();
   });
 });
 

@@ -8,6 +8,7 @@ import './styles_intro.css';
 
 import './modules/global_module';
 import './modules/intro_module';
+import { stars, startCombat } from './modules/stars_module';
 
 // const playButton = document.querySelector('.introPanel button');
 
@@ -20,3 +21,8 @@ import './modules/intro_module';
 // const dialog = document.querySelector('dialog');
 
 // dialog.show();
+
+console.log(stars);
+
+startCombat.call(stars.polaris);
+// startCombat.call(stars.vega);

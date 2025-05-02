@@ -1,4 +1,8 @@
 let myFaction = 1;
+let mySpirit = {
+  health: 30,
+  damage: 3,
+};
 
 const universe = document.querySelector('.universe');
 
