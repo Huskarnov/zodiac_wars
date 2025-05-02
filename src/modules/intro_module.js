@@ -10,7 +10,7 @@ import virgoPic from '/ressources/images/virgo.png';
 import libraPic from '/ressources/images/libra.png';
 import scorpioPic from '/ressources/images/scorpio.png';
 import sagittarusPic from '/ressources/images/sagittarus.png';
-import capricornusPic from '/ressources/images/capricornus.png';
+import capricornPic from '/ressources/images/capricorn.png';
 import aquariusPic from '/ressources/images/aquarius.png';
 import piscesPic from '/ressources/images/pisces.png';
 
@@ -85,8 +85,8 @@ allSigns.forEach((image, index) => {
         factionImage.src = sagittarusPic;
         break;
       case 9:
-        factionChoice = 'capricornus';
-        factionImage.src = capricornusPic;
+        factionChoice = 'capricorn';
+        factionImage.src = capricornPic;
         break;
       case 10:
         factionChoice = 'aquarius';

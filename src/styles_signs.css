@@ -105,9 +105,9 @@
   z-index: +2;
 }
 
-#capricornus {
+#capricorn {
   position: absolute;
-  background-image: url('/ressources/images/capricornus.png');
+  background-image: url('/ressources/images/capricorn.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -138,7 +138,8 @@
   z-index: +2;
 }
 
-#playGround > div:not(.universe):hover {
+#playGround > div:not(.universe):hover,
+.universe > div:hover {
   filter: brightness(2);
   cursor: pointer;
 }
@@ -334,7 +335,7 @@
   left: 1309px;
   background-color: var(--cancer);
 }
-#phialphaLyncis {
+#phiLyncis {
   height: 36px;
   width: 36px;
   top: 799px;

@@ -1,102 +1,131 @@
-export { stars, startCombat };
+export { stars };
 
-let stars = {
-  polaris: {
-    name: 'polaris',
-    peace: false,
-    element: document.querySelector('#polaris'),
-    defending: 'aries',
-    defendingAvatar: {
-      health: 100,
-      damage: 15,
-    },
-    attacking: 'virgo',
-    attackingAvatar: {
-      health: 210,
-      damage: 10,
-    },
-  },
-  vega: {
-    name: 'vega',
-    peace: false,
-    element: document.querySelector('#vega'),
-    defending: 'taurus',
-    defendingAvatar: {
-      health: 130,
-      damage: 15,
-    },
-    attacking: 'scorpio',
-    attackingAvatar: {
-      health: 310,
-      damage: 10,
-    },
-  },
-};
-// stars.array.forEach((star) => {
-//   const starElement = star.element;
-//   starElement.addEventListener('click', () => {});
-// });
+const universe = document.querySelector('.universe');
+const universeStars = Array.from(universe.children);
 
-// setInterval(() => {
-//   stars.polaris.element.style.backgroundColor = 'var(--aries);';
-// }, 1000);
+class Star {
+  constructor(
+    name,
+    peace,
+    element,
+    defending,
+    defendingHealth,
+    defendingDamage,
+    attacking,
+    attackingHealth,
+    attackingDamage,
+    ...adjacentStars
+  ) {
+    this.name = name;
+    this.peace = peace;
+    this.element = element;
+    this.defending = defending;
+    this.defendingAvatar = {
+      health: defendingHealth,
+      damage: defendingDamage,
+    };
+    this.attacking = attacking;
+    this.attackingAvatar = {
+      health: attackingHealth,
+      damage: attackingDamage,
+    };
+    this.adjacentStars = adjacentStars;
+  }
 
-const startCombat = function () {
-  if (this.peace === true) {
-    return;
-  } else {
-    let whoAttacks = 'a';
-    let combatLoop = setInterval(() => {
+  startCombat() {
+    if (this.peace) {
+      console.log(`The system ${this.name} is at peace, no combat`);
+      return;
+    }
+    let whoAttacks = 'attacker';
+    console.log(
+      `Combat started at ${this.name} between ${this.attacking} and ${this.defending}`
+    );
+    this.combatLoop = setInterval(() => {
       if (
-        this.defendingAvatar.health > 0 &&
-        this.attackingAvatar.health > 0 &&
-        this.peace == false
+        this.defendingAvatar.health <= 0 ||
+        this.attackingAvatar.health <= 0 ||
+        this.peace
       ) {
-        if (whoAttacks === 'a') {
-          this.defendingAvatar.health -= this.attackingAvatar.damage;
-          console.log(`defenders health: ${this.defendingAvatar.health}`);
-          whoAttacks = 'b';
-          combatEnd.call(stars.polaris);
-        } else {
-          this.attackingAvatar.health -= this.defendingAvatar.damage;
-          console.log(`attacking health: ${this.attackingAvatar.health}`);
-          whoAttacks = 'a';
-          combatEnd.call(stars.polaris);
-        }
-
-        function combatEnd() {
-          if (
-            this.defendingAvatar.health <= 0 ||
-            this.attackingAvatar.health <= 0
-          ) {
-            this.peace = true;
-            if (this.defendingAvatar.health <= 0) {
-              // attacker wins
-              this.defending = this.attacking;
-              this.defendingAvatar = this.attackingAvatar;
-              console.log(
-                `fight over || ${this.defending} now controls ${this.name}`
-              );
-            } else if (this.attackingAvatar.health <= 0) {
-              // defender wins
-              console.log(
-                `fight over || ${this.defending} still controls ${this.name}`
-              );
-            }
-            console.log(
-              `New controller: ${this.defending}, health: ${this.defendingAvatar.health}, damage: ${this.defendingAvatar.damage}`
-            );
-            clearInterval(combatLoop);
-            clearInterval(fustionLoop);
-          }
-        }
+        this.endCombat();
+        return;
+      }
+      if (whoAttacks === 'attacker') {
+        this.defendingAvatar.health -= this.attackingAvatar.damage;
+        console.log(`defenders health: ${this.defendingAvatar.health}`);
+        whoAttacks = 'defender';
+      } else {
+        this.attackingAvatar.health -= this.defendingAvatar.damage;
+        console.log(`attackers health: ${this.attackingAvatar.health}`);
+        whoAttacks = 'attacker';
       }
     }, 100);
   }
+  endCombat() {
+    this.peace = true;
+    // attacker wins
+    if (this.defendingAvatar.health <= 0) {
+      console.log(`Fight over: ${this.attacking} now controls ${this.name}`);
+      this.defending = this.attacking;
+      this.defendingAvatar = { ...this.attackingAvatar };
+    } else {
+      // defender wins
+      console.log(`Fight over: ${this.defending} still controls ${this.name}`);
+    }
+    this.element.style.backgroundColor = `var(--${this.defending})`;
+    console.log(
+      `Surviving avatar has: ${this.defendingAvatar.health} health, ${this.defendingAvatar.damage} damage`
+    );
+    if (this.combatLoop) {
+      clearInterval(this.combatLoop);
+      this.combatLoop = null;
+    }
+  }
+
+  emporewAvatar(power) {
+    if (user.zodiacSign === attacking) {
+      this.attackingAvatar.health = user.health * power;
+      this.attackingAvatar.damage = user.damage * power;
+    } else if (user.zodiacSign === this.defending) {
+      this.defendingAvatar.health = user.health * power;
+      this.defendingAvatar.damage = user.damage * power;
+    }
+  }
+}
+
+// intialize;
+
+let stars = {
+  polaris: new Star(
+    'polaris',
+    false,
+    document.querySelector('#polaris'),
+    'gemini',
+    130,
+    8,
+    'gemini',
+    200,
+    5,
+    'yildun'
+  ),
+  vega: new Star(
+    'vega',
+    false,
+    document.querySelector('#vega'),
+    'pisces',
+    100,
+    6,
+    'scorpio',
+    200,
+    3
+  ),
 };
 
-let fustionLoop = setInterval(() => {
-  stars.polaris.defendingAvatar.health += 5;
-}, 80);
+// stars.vega.startCombat();
+// stars.polaris.startCombat();
 
-// combat.call(stars.polaris);
+universeStars.forEach((starElement) => {
+  starElement.addEventListener('mouseover', (event) => {
+    console.log(event.currentTarget.id);
+  });
+});
