@@ -102,7 +102,9 @@ class Star {
 
   handleClicOnStar(event) {
     const starName = event.target.id;
-    const neighborsArray = stars.scutum[starName].neighbors;
+    let eventConstellation = event.target.constellation;
+    const neighborsArray = stars[eventConstellation][starName].neighbors;
+    const constellations = Object.keys(stars);
 
     const neighboringStars = neighborsArray.filter((item) => {
       if (
@@ -147,13 +149,25 @@ class Star {
     });
 
     const neighboringStarDefenders = neighboringStars.map((star) => {
-      return stars.scutum[star].defending;
+      let constellationOfneighbor;
+      constellations.forEach((constellation) => {
+        if (Object.hasOwn(stars[constellation], star)) {
+          constellationOfneighbor = constellation;
+
+          console.log(
+            `the star ${star} is in the ${constellationOfneighbor} constellation`
+          );
+          // console.log(`${constellationOfneighbor}`);
+        }
+      });
+
+      return stars[constellationOfneighbor][star].defending;
     });
 
     const allSuroundingDefenders = [
       ...neighboringStarDefenders,
       ...neighboringZodiacs,
-      stars.scutum[starName].defending,
+      stars[eventConstellation][starName].defending, //self faction of clicked star
     ];
 
     const currentUserSign = users.me.zodiacSign;
@@ -244,6 +258,74 @@ let stars = {
       'alpha_scuti'
     ),
   },
+  cauda: {
+    iota_serpentis: new Star(
+      'iota_serpentis',
+      false,
+      document.querySelector('#iota_serpentis'),
+      'sagittarius',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'xi_serpentis',
+      'athebyne'
+    ),
+    xi_serpentis: new Star(
+      'xi_serpentis',
+      false,
+      document.querySelector('#xi_serpentis'),
+      'scorpio',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'iota_serpentis',
+      'mu_serpentis'
+    ),
+    mu_serpentis: new Star(
+      'mu_serpentis',
+      false,
+      document.querySelector('#mu_serpentis'),
+      'scorpio',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'xi_serpentis',
+      'rho_serpentis'
+    ),
+    rho_serpentis: new Star(
+      'rho_serpentis',
+      false,
+      document.querySelector('#rho_serpentis'),
+      'scorpio',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'delta_scuti',
+      'mu_serpentis',
+      'sigma_serpentis'
+    ),
+    sigma_serpentis: new Star(
+      'sigma_serpentis',
+      false,
+      document.querySelector('#sigma_serpentis'),
+      'scorpio',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'rho_serpentis',
+      'libra'
+    ),
+  },
 };
 
 // stars.vega.startCombat();
@@ -257,15 +339,15 @@ let stars = {
       const starId = event.currentTarget.id;
 
       console.log(`star ID ${starId}`);
-      console.log(`Controlled by ${stars.scutum[starId].defending}`);
 
       // allocate mother constellation to each star
       constellations.forEach((constellation) => {
         if (Object.hasOwn(stars[constellation], starId)) {
           stars[constellation][starId]['constellation'] = constellation;
+          starElement['constellation'] = constellation;
 
           console.log(
-            `is star is in the ${stars[constellation][starId].constellation} constellation`
+            `the clicked star is in the ${stars[constellation][starId].constellation} constellation`
           );
         }
       });
