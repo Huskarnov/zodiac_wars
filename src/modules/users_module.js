@@ -1,5 +1,8 @@
+export { users };
+
 class User {
-  constructor(health, damage, experience) {
+  constructor(zodiacSign, health, damage, experience) {
+    this.zodiacSign = zodiacSign;
     this.health = health;
     this.damage = damage;
     this.experience = experience;
@@ -7,5 +10,5 @@ class User {
 }
 
 let users = {
-  me: new User(100, 5, 0),
+  me: new User('libra', 100, 5, 0),
 };

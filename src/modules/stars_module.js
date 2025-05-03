@@ -106,34 +106,75 @@ class Star {
 // intialize;
 
 let stars = {
-  // ursa minor
-  polaris: new Star(
-    'polaris',
-    false,
-    document.querySelector('#polaris'),
-    'gemini',
-    130,
-    8,
-    'gemini',
-    200,
-    5,
-    'yildun'
-  ),
-  // cauda
-  thetaSerpentis: new Star(
-    'thetaSerpentis',
-    false,
-    document.querySelector('#thetaSerpentis'),
-    'gemini',
-    100,
-    6,
-    'scorpio',
-    200,
-    3,
-    'etaSerpentis',
-    'epsilonSerpentis',
-    'gemini'
-  ),
+  ursaMinor: {
+    polaris: new Star(
+      'polaris',
+      false,
+      document.querySelector('#polaris'),
+      'gemini',
+      130,
+      8,
+      'gemini',
+      200,
+      5,
+      'yildun'
+    ),
+  },
+
+  cauda: {
+    unukalhai: new Star(
+      'unukalhai',
+      false,
+      document.querySelector('#thetaSerpentis'),
+      'virgo',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'betaSerpentis'
+    ),
+    betaSerpentis: new Star(
+      'betaSerpentis',
+      false,
+      document.querySelector('#thetaSerpentis'),
+      'virgo',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'unukalhai',
+      'gammaSerpentis'
+    ),
+    gammaSerpentis: new Star(
+      'gammaSerpentis',
+      false,
+      document.querySelector('#thetaSerpentis'),
+      'virgo',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'betaSerpentis',
+      'deltaSerpentis'
+    ),
+    deltaSerpentis: new Star(
+      'deltaSerpentis',
+      false,
+      document.querySelector('#thetaSerpentis'),
+      'virgo',
+      100,
+      6,
+      '',
+      0,
+      0,
+      'gammaSerpentis',
+      'epsilonSerpentis',
+      'betaBerenices'
+    ),
+  },
 };
 
 // stars.vega.startCombat();
