@@ -251,7 +251,26 @@ let stars = {
 
 universeStars.forEach((starElement) => {
   starElement.addEventListener('mouseover', (event) => {
-    console.log(event.currentTarget.id);
+    const starId = event.currentTarget.id;
+    console.log(`star ID ${starId}`);
+    console.log(`Controlled by ${stars.scutum[starId].defending}`);
+
+    const constellations = Object.keys(stars);
+
+    // let currentConstellation;
+
+    constellations.forEach((constellation) => {
+      if (Object.hasOwn(stars[constellation], starId)) {
+        stars[constellation][starId][constellation] = constellation;
+        // console.log(stars[constellation][starId]);
+        console.log(
+          `the current constellation ${stars[constellation][starId]}`
+        );
+      }
+    });
+
+    // console.log(`the current constellation ${currentConstellation}`);
+
     navigator.clipboard.writeText(`${event.currentTarget.id}`);
   });
 });
