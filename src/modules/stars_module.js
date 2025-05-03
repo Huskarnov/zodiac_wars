@@ -323,7 +323,8 @@ let stars = {
       0,
       0,
       'rho_serpentis',
-      'libra'
+      'libra',
+      'delta_serpentis'
     ),
   },
   caput: {
@@ -378,7 +379,8 @@ let stars = {
       0,
       'gamma_serpentis',
       'beta_berenices',
-      'epsilon_serpentis'
+      'epsilon_serpentis',
+      'sigma_serpentis'
     ),
     unukalhai: new Star(
       'unukalhai',
