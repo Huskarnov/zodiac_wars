@@ -10,5 +10,5 @@ class User {
 }
 
 let users = {
-  me: new User('libra', 100, 5, 0),
+  me: new User('scorpio', 100, 5, 0),
 };

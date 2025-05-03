@@ -121,58 +121,62 @@ let stars = {
     ),
   },
 
-  cauda: {
-    unukalhai: new Star(
-      'unukalhai',
+  scutum: {
+    alpha_scuti: new Star(
+      'alpha_scuti',
       false,
-      document.querySelector('#unukalhai'),
-      'virgo',
+      document.querySelector('#alpha_scuti'),
+      'sagittarus',
       100,
       6,
       '',
       0,
       0,
-      'beta-serpentis'
+      'delta_lyrae',
+      'gamma_scuti',
+      'beta_scuti',
+      'sagittarus'
     ),
-    betaSerpentis: new Star(
-      'beta-serpentis',
+    beta_scuti: new Star(
+      'beta_scuti',
       false,
-      document.querySelector('#beta-serpentis'),
-      'virgo',
+      document.querySelector('#beta_scuti'),
+      'scorpio',
       100,
       6,
       '',
       0,
       0,
-      'unukalhai',
-      'gamma-serpentis'
+      'alpha_scuti',
+      'delta_scuti',
+      'scorpio'
     ),
-    gamma_serpentis: new Star(
-      'gamma-serpentis',
+    delta_scuti: new Star(
+      'delta_scuti',
       false,
-      document.querySelector('#gamma-serpentis'),
-      'virgo',
+      document.querySelector('#delta_scuti'),
+      'scorpio',
       100,
       6,
       '',
       0,
       0,
-      'betaSerpentis',
-      'deltaSerpentis'
+      'beta_scuti',
+      'gamma_scuti',
+      'rho_serpentis'
     ),
-    deltaSerpentis: new Star(
-      'deltaSerpentis',
+    gamma_scuti: new Star(
+      'gamma_scuti',
       false,
-      document.querySelector('#thetaSerpentis'),
-      'virgo',
+      document.querySelector('#gamma_scuti'),
+      'sagittarus',
       100,
       6,
       '',
       0,
       0,
-      'gammaSerpentis',
-      'epsilonSerpentis',
-      'betaBerenices'
+      'delta_scuti',
+      'alpha_scuti'
     ),
   },
 };
