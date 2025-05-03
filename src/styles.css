@@ -14,7 +14,7 @@
   --virgo: #8f977940;
   --libra: #ffc0f541;
   --scorpio: #80000040;
-  --sagittarus: #4169e140;
+  --sagittarius: #4169e140;
   --capricorn: #a54d2a40;
   --aquarius: #00ffff40;
   --pisces: #b19cd940;
@@ -246,7 +246,7 @@ header button:hover {
 
 #playGround {
   /* block */
-  display: block;
+  display: none;
 
   top: 150px;
   position: relative;

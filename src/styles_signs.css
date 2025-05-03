@@ -93,9 +93,9 @@
   z-index: +2;
 }
 
-#sagittarus {
+#sagittarius {
   position: absolute;
-  background-image: url('/ressources/images/sagittarus.png');
+  background-image: url('/ressources/images/sagittarius.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -586,7 +586,7 @@
   width: 58px;
   top: 1275px;
   left: 588px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #delta_delphini {
   height: 58px;
@@ -631,14 +631,14 @@
   width: 39px;
   top: 1458px;
   left: 636px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #epsilon_lyrae {
   height: 50px;
   width: 50px;
   top: 1363px;
   left: 624px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 /* -------scutum----- */
 /* -------scutum----- */
@@ -648,7 +648,7 @@
   width: 59px;
   top: 1448px;
   left: 489px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #beta_scuti {
   height: 44px;
@@ -669,7 +669,7 @@
   width: 41px;
   top: 1532px;
   left: 703px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 /* ----cauda serpens */
 /* ----cauda serpens */
@@ -679,7 +679,7 @@
   width: 51px;
   top: 1399px;
   left: 756px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #xi_serpentis {
   height: 60px;
@@ -929,33 +929,33 @@
   width: 67px;
   top: 1236px;
   left: 647px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #alfirk {
   height: 39px;
   width: 39px;
   top: 1289px;
   left: 760px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #errai {
   height: 46px;
   width: 46px;
   top: 1200px;
   left: 830px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #alradif {
   height: 46px;
   width: 46px;
   top: 1052px;
   left: 860px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }
 #epsilon_cephei {
   height: 46px;
   width: 46px;
   top: 1142px;
   left: 725px;
-  background-color: var(--sagittarus);
+  background-color: var(--sagittarius);
 }

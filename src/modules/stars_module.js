@@ -1,4 +1,6 @@
 export { stars };
+import { users } from './users_module';
+// users.me.zodiacSign
 
 const universe = document.querySelector('.universe');
 const universeStars = Array.from(universe.children);
@@ -15,11 +17,61 @@ class Star {
     attackingHealth,
     attackingDamage,
     // adjacentHomeworlds,
-    ...adjacentStars
+    ...neighbors
   ) {
     this.name = name;
     this.peace = peace;
     this.element = element;
+
+    this.element.addEventListener('click', (event) => {
+      const elementId = event.target.id;
+      const neighborsArray = stars.scutum[elementId].neighbors;
+
+      const neighboringStars = neighborsArray.filter((item) => {
+        if (
+          item !== 'aries' &&
+          item !== 'taurus' &&
+          item !== 'gemini' &&
+          item !== 'cancer' &&
+          item !== 'leo' &&
+          item !== 'virgo' &&
+          item !== 'libra' &&
+          item !== 'scorpio' &&
+          item !== 'sagittarius' &&
+          item !== 'capricorn' &&
+          item !== 'aquarius' &&
+          item !== 'pisces'
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+      const neighboringZodiacs = neighborsArray.filter((item) => {
+        if (
+          item == 'aries' ||
+          item == 'taurus' ||
+          item == 'gemini' ||
+          item == 'cancer' ||
+          item == 'leo' ||
+          item == 'virgo' ||
+          item == 'libra' ||
+          item == 'scorpio' ||
+          item == 'sagittarius' ||
+          item == 'capricorn' ||
+          item == 'aquarius' ||
+          item == 'pisces'
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+
+      console.log(`connected stars ${neighboringStars}`);
+      console.log(`connected zodiacs ${neighboringZodiacs}`);
+    });
+
     this.defending = defending;
     this.defendingAvatar = {
       health: defendingHealth,
@@ -30,7 +82,7 @@ class Star {
       health: attackingHealth,
       damage: attackingDamage,
     };
-    this.adjacentStars = adjacentStars;
+    this.neighbors = neighbors;
   }
 
   startCombat() {
@@ -126,7 +178,7 @@ let stars = {
       'alpha_scuti',
       false,
       document.querySelector('#alpha_scuti'),
-      'sagittarus',
+      'sagittarius',
       100,
       6,
       '',
@@ -135,7 +187,7 @@ let stars = {
       'delta_lyrae',
       'gamma_scuti',
       'beta_scuti',
-      'sagittarus'
+      'sagittarius'
     ),
     beta_scuti: new Star(
       'beta_scuti',
@@ -169,7 +221,7 @@ let stars = {
       'gamma_scuti',
       false,
       document.querySelector('#gamma_scuti'),
-      'sagittarus',
+      'sagittarius',
       100,
       6,
       '',
