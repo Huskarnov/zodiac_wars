@@ -165,14 +165,14 @@
   left: 1005px;
   background-color: var(--aries);
 }
-#epsilon-ursae {
+#epsilon_ursae {
   height: 35px;
   width: 35px;
   top: 1085px;
   left: 1047px;
   background-color: var(--aries);
 }
-#zeta-ursae {
+#zeta_ursae {
   height: 32px;
   width: 32px;
   top: 1117px;
@@ -195,7 +195,7 @@
   background-color: var(--virgo);
 }
 
-#eta-ursae {
+#eta_ursae {
   height: 38px;
   width: 38px;
   top: 1175px;
@@ -214,49 +214,49 @@
   left: 1064px;
   background-color: var(--libra);
 }
-#beta--serpentis {
+#beta_serpentis {
   height: 38px;
   width: 38px;
   top: 1411px;
   left: 1162px;
   background-color: var(--virgo);
 }
-#gamma--serpentis {
+#gamma_serpentis {
   height: 39px;
   width: 39px;
   top: 1467px;
   left: 1178px;
   background-color: var(--virgo);
 }
-#delta--serpentis {
+#delta_serpentis {
   height: 43px;
   width: 43px;
   top: 1565px;
   left: 1215px;
   background-color: var(--virgo);
 }
-#epsilon--serpentis {
+#epsilon_serpentis {
   height: 49px;
   width: 49px;
   top: 1563px;
   left: 1350px;
   background-color: var(--virgo);
 }
-#zeta--serpentis {
+#zeta_serpentis {
   height: 46px;
   width: 46px;
   top: 1513px;
   left: 1397px;
   background-color: var(--virgo);
 }
-#eta--serpentis {
+#eta_serpentis {
   height: 40px;
   width: 40px;
   top: 1588px;
   left: 1420px;
   background-color: var(--virgo);
 }
-#theta--serpentis {
+#theta_serpentis {
   height: 55px;
   width: 55px;
   top: 1641px;
@@ -264,21 +264,21 @@
   background-color: var(--virgo);
 }
 /* berenices */
-#beta-berenices {
+#beta_berenices {
   height: 55px;
   width: 55px;
   top: 1465px;
   left: 1270px;
   background-color: var(--virgo);
 }
-#alpha-berenices {
+#alpha_berenices {
   height: 42px;
   width: 42px;
   top: 1343px;
   left: 1403px;
   background-color: var(--leo);
 }
-#gamma-berenices {
+#gamma_berenices {
   height: 45px;
   width: 45px;
   top: 1451px;
@@ -289,35 +289,35 @@
 /* ``````````````````leo minor */
 /* ``````````````````leo minor */
 
-#alpha-leonis-minoris {
+#alpha_leonis_minoris {
   height: 52px;
   width: 52px;
   top: 1252px;
   left: 1494px;
   background-color: var(--leo);
 }
-#Beta-leonis-minoris {
+#Beta_leonis_minoris {
   height: 52px;
   width: 52px;
   top: 1043px;
   left: 1510px;
   background-color: var(--leo);
 }
-#epsilon-leonis-minoris {
+#epsilon_leonis_minoris {
   height: 51px;
   width: 51px;
   top: 915px;
   left: 1504px;
   background-color: var(--leo);
 }
-#kappa-leonis-minoris {
+#kappa_leonis_minoris {
   height: 54px;
   width: 54px;
   top: 930px;
   left: 1590px;
   background-color: var(--leo);
 }
-#zeta-leonis-minoris {
+#zeta_leonis_minoris {
   height: 53px;
   width: 53px;
   top: 760px;
@@ -335,49 +335,49 @@
   left: 1309px;
   background-color: var(--cancer);
 }
-#phi-lyncis {
+#phi_lyncis {
   height: 36px;
   width: 36px;
   top: 799px;
   left: 1309px;
   background-color: var(--cancer);
 }
-#epsilon-lyncis {
+#epsilon_lyncis {
   height: 65px;
   width: 65px;
   top: 799px;
   left: 1359px;
   background-color: var(--cancer);
 }
-#nu-lyncis {
+#nu_lyncis {
   height: 30px;
   width: 30px;
   top: 760px;
   left: 1385px;
   background-color: var(--cancer);
 }
-#delta-lyncis {
+#delta_lyncis {
   height: 47px;
   width: 47px;
   top: 760px;
   left: 1453px;
   background-color: var(--cancer);
 }
-#kappa-lyncis {
+#kappa_lyncis {
   height: 67px;
   width: 67px;
   top: 677px;
   left: 1556px;
   background-color: var(--cancer);
 }
-#lambda-lyncis {
+#lambda_lyncis {
   height: 44px;
   width: 44px;
   top: 578px;
   left: 1605px;
   background-color: var(--cancer);
 }
-#omega-lyncis {
+#omega_lyncis {
   height: 57px;
   width: 57px;
   top: 547px;
@@ -422,7 +422,7 @@
   left: 1410px;
   background-color: var(--gemini);
 }
-#theta-aurigae {
+#theta_aurigae {
   height: 60px;
   width: 60px;
   top: 405px;
@@ -470,21 +470,21 @@
 /* --------triangulum------ */
 /* --------triangulum------ */
 /* --------triangulum------ */
-#beta-trianguli {
+#beta_trianguli {
   height: 53px;
   width: 53px;
   top: 575px;
   left: 469px;
   background-color: var(--pisces);
 }
-#alpha-trianguli {
+#alpha_trianguli {
   height: 57px;
   width: 57px;
   top: 362px;
   left: 749px;
   background-color: var(--aries);
 }
-#gamma-trianguli {
+#gamma_trianguli {
   height: 69px;
   width: 69px;
   top: 277px;
@@ -581,14 +581,14 @@
   left: 453px;
   background-color: var(--capricorn);
 }
-#gamma-delphini {
+#gamma_delphini {
   height: 58px;
   width: 58px;
   top: 1275px;
   left: 588px;
   background-color: var(--sagittarus);
 }
-#delta-delphini {
+#delta_delphini {
   height: 58px;
   width: 58px;
   top: 983px;
@@ -619,21 +619,21 @@
   left: 424px;
   background-color: var(--capricorn);
 }
-#delta-lyrae {
+#delta_lyrae {
   height: 47px;
   width: 47px;
   top: 1360px;
   left: 460px;
   background-color: var(--capricorn);
 }
-#zeta-lyrae {
+#zeta_lyrae {
   height: 39px;
   width: 39px;
   top: 1458px;
   left: 636px;
   background-color: var(--sagittarus);
 }
-#epsilon-lyrae {
+#epsilon_lyrae {
   height: 50px;
   width: 50px;
   top: 1363px;
@@ -643,28 +643,28 @@
 /* -------scutum----- */
 /* -------scutum----- */
 /* -------scutum----- */
-#alpha-scuti {
+#alpha_scuti {
   height: 59px;
   width: 59px;
   top: 1448px;
   left: 489px;
   background-color: var(--sagittarus);
 }
-#beta-scuti {
+#beta_scuti {
   height: 44px;
   width: 44px;
   top: 1594px;
   left: 664px;
   background-color: var(--scorpio);
 }
-#delta-scuti {
+#delta_scuti {
   height: 40px;
   width: 40px;
   top: 1618px;
   left: 829px;
   background-color: var(--scorpio);
 }
-#gamma-scuti {
+#gamma_scuti {
   height: 41px;
   width: 41px;
   top: 1532px;
@@ -674,35 +674,35 @@
 /* ----cauda serpens */
 /* ----cauda serpens */
 /* ----cauda serpens */
-#iota-serpentis {
+#iota_serpentis {
   height: 51px;
   width: 51px;
   top: 1399px;
   left: 756px;
   background-color: var(--sagittarus);
 }
-#xi-serpentis {
+#xi_serpentis {
   height: 60px;
   width: 60px;
   top: 1473px;
   left: 848px;
   background-color: var(--scorpio);
 }
-#mu-serpentis {
+#mu_serpentis {
   height: 57px;
   width: 57px;
   top: 1605px;
   left: 917px;
   background-color: var(--scorpio);
 }
-#rho-serpentis {
+#rho_serpentis {
   height: 46px;
   width: 46px;
   top: 1672px;
   left: 927px;
   background-color: var(--scorpio);
 }
-#sigma-serpentis {
+#sigma_serpentis {
   height: 61px;
   width: 61px;
   top: 1624px;
@@ -848,14 +848,14 @@
   left: 1260px;
   background-color: var(--gemini);
 }
-#alula-borealis {
+#alula_borealis {
   height: 47px;
   width: 47px;
   top: 646px;
   left: 1159px;
   background-color: var(--gemini);
 }
-#alula-australis {
+#alula_australis {
   height: 44px;
   width: 44px;
   top: 602px;
@@ -865,56 +865,56 @@
 /* -----camelopardus---- */
 /* -----camelopardus---- */
 /* -----camelopardus---- */
-#beta-camelopardalis {
+#beta_camelopardalis {
   height: 49px;
   width: 49px;
   top: 1013px;
   left: 626px;
   background-color: var(--aquarius);
 }
-#cs-camelopardalis {
+#cs_camelopardalis {
   height: 42px;
   width: 42px;
   top: 985px;
   left: 730px;
   background-color: var(--aquarius);
 }
-#alpha-camelopardalis {
+#alpha_camelopardalis {
   height: 66px;
   width: 66px;
   top: 977px;
   left: 822px;
   background-color: var(--pisces);
 }
-#gamma-camelopardalis {
+#gamma_camelopardalis {
   height: 56px;
   width: 56px;
   top: 865px;
   left: 769px;
   background-color: var(--pisces);
 }
-#iota-camelopardalis {
+#iota_camelopardalis {
   height: 42px;
   width: 42px;
   top: 800px;
   left: 698px;
   background-color: var(--pisces);
 }
-#sigma-camelopardalis {
+#sigma_camelopardalis {
   height: 50px;
   width: 50px;
   top: 754px;
   left: 587px;
   background-color: var(--pisces);
 }
-#zeta-camelopardalis {
+#zeta_camelopardalis {
   height: 57px;
   width: 57px;
   top: 775px;
   left: 889px;
   background-color: var(--aries);
 }
-#phi-camelopardalis {
+#phi_camelopardalis {
   height: 51px;
   width: 51px;
   top: 849px;
@@ -952,7 +952,7 @@
   left: 860px;
   background-color: var(--sagittarus);
 }
-#epsilon-cephei {
+#epsilon_cephei {
   height: 46px;
   width: 46px;
   top: 1142px;

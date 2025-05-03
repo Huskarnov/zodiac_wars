@@ -125,19 +125,19 @@ let stars = {
     unukalhai: new Star(
       'unukalhai',
       false,
-      document.querySelector('#thetaSerpentis'),
+      document.querySelector('#unukalhai'),
       'virgo',
       100,
       6,
       '',
       0,
       0,
-      'betaSerpentis'
+      'beta-serpentis'
     ),
     betaSerpentis: new Star(
-      'betaSerpentis',
+      'beta-serpentis',
       false,
-      document.querySelector('#thetaSerpentis'),
+      document.querySelector('#beta-serpentis'),
       'virgo',
       100,
       6,
@@ -145,12 +145,12 @@ let stars = {
       0,
       0,
       'unukalhai',
-      'gammaSerpentis'
+      'gamma-serpentis'
     ),
-    gammaSerpentis: new Star(
-      'gammaSerpentis',
+    gamma_serpentis: new Star(
+      'gamma-serpentis',
       false,
-      document.querySelector('#thetaSerpentis'),
+      document.querySelector('#gamma-serpentis'),
       'virgo',
       100,
       6,
