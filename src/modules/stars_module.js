@@ -24,52 +24,7 @@ class Star {
     this.element = element;
 
     this.element.addEventListener('click', (event) => {
-      const elementId = event.target.id;
-      const neighborsArray = stars.scutum[elementId].neighbors;
-
-      const neighboringStars = neighborsArray.filter((item) => {
-        if (
-          item !== 'aries' &&
-          item !== 'taurus' &&
-          item !== 'gemini' &&
-          item !== 'cancer' &&
-          item !== 'leo' &&
-          item !== 'virgo' &&
-          item !== 'libra' &&
-          item !== 'scorpio' &&
-          item !== 'sagittarius' &&
-          item !== 'capricorn' &&
-          item !== 'aquarius' &&
-          item !== 'pisces'
-        ) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-      const neighboringZodiacs = neighborsArray.filter((item) => {
-        if (
-          item == 'aries' ||
-          item == 'taurus' ||
-          item == 'gemini' ||
-          item == 'cancer' ||
-          item == 'leo' ||
-          item == 'virgo' ||
-          item == 'libra' ||
-          item == 'scorpio' ||
-          item == 'sagittarius' ||
-          item == 'capricorn' ||
-          item == 'aquarius' ||
-          item == 'pisces'
-        ) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-
-      console.log(`connected stars ${neighboringStars}`);
-      console.log(`connected zodiacs ${neighboringZodiacs}`);
+      this.handleClicOnStar(event);
     });
 
     this.defending = defending;
@@ -145,13 +100,71 @@ class Star {
     }
   }
 
-  checkContact(faction) {
-    const acceptedSigns = this.adjacentStars.filter((item) => {
-      // if (item !== 'aries' && item !== 'taurus' etc ...)
+  handleClicOnStar(event) {
+    const starName = event.target.id;
+    const neighborsArray = stars.scutum[starName].neighbors;
+
+    const neighboringStars = neighborsArray.filter((item) => {
+      if (
+        item !== 'aries' &&
+        item !== 'taurus' &&
+        item !== 'gemini' &&
+        item !== 'cancer' &&
+        item !== 'leo' &&
+        item !== 'virgo' &&
+        item !== 'libra' &&
+        item !== 'scorpio' &&
+        item !== 'sagittarius' &&
+        item !== 'capricorn' &&
+        item !== 'aquarius' &&
+        item !== 'pisces'
+      ) {
+        return true;
+      } else {
+        return false;
+      }
     });
-    const neighborhood = this.adjacentStars.filter((item) => {
-      // if (item === 'aries' || item === 'taurus' ... etc )
+
+    const neighboringZodiacs = neighborsArray.filter((item) => {
+      if (
+        item == 'aries' ||
+        item == 'taurus' ||
+        item == 'gemini' ||
+        item == 'cancer' ||
+        item == 'leo' ||
+        item == 'virgo' ||
+        item == 'libra' ||
+        item == 'scorpio' ||
+        item == 'sagittarius' ||
+        item == 'capricorn' ||
+        item == 'aquarius' ||
+        item == 'pisces'
+      ) {
+        return true;
+      } else {
+        return false;
+      }
     });
+
+    const neighboringStarDefenders = neighboringStars.map((star) => {
+      return stars.scutum[star].defending;
+    });
+
+    const allSuroundingDefenders = [
+      ...neighboringStarDefenders,
+      ...neighboringZodiacs,
+      stars.scutum[starName].defending,
+    ];
+
+    const currentUserSign = users.me.zodiacSign;
+
+    const canDeploy = allSuroundingDefenders.includes(currentUserSign);
+
+    if (canDeploy) {
+      console.log(`You can deploy ${canDeploy}`);
+    } else {
+      console.log(`You can NOT deploy ${canDeploy}`);
+    }
   }
 }
 
