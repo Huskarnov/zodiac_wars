@@ -5,6 +5,10 @@ import { users } from './users_module';
 const universe = document.querySelector('.universe');
 const universeStars = Array.from(universe.children);
 
+// const dialog = document.querySelector('.introDialog');
+const battleDialog = document.querySelector('#battleDialog');
+const battleInterface = document.querySelector('#battleInterface');
+
 class Star {
   constructor(
     name,
@@ -172,7 +176,7 @@ class Star {
     const allSuroundingDefenders = [
       ...neighboringStarDefenders,
       ...neighboringZodiacs,
-      stars[eventConstellation][starName].defending, //self faction of clicked star
+      stars[eventConstellation][starName].defending, //faction controlling the actual star
     ];
 
     const currentUserSign = users.me.zodiacSign;
@@ -181,6 +185,9 @@ class Star {
 
     if (canDeploy) {
       console.log(`You can deploy ${canDeploy}`);
+      battleInterface.style.display = 'flex';
+      // dialog.style.display = 'flex';
+      battleDialog.show();
     } else {
       alert(`You a need a connected star to deploy`);
       console.log(`You can NOT deploy ${canDeploy}`);
@@ -1725,3 +1732,9 @@ let stars = {
     // navigator.clipboard.writeText(`${event.currentTarget.id}`);
   });
 })();
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    battleDialog.close();
+  }
+});

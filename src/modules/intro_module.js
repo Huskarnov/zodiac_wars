@@ -99,7 +99,9 @@ allSigns.forEach((image, index) => {
 
     header.style.display = 'grid';
     playGround.style.display = 'block';
-    dialogIntro.style.display = 'none';
+
+    // dialogIntro.style.display = 'none';
+    zodiacChoice.style.display = 'none';
     dialogIntro.close();
   });
 });
