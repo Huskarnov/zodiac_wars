@@ -182,6 +182,7 @@ class Star {
     if (canDeploy) {
       console.log(`You can deploy ${canDeploy}`);
     } else {
+      alert(`You a need a connected star to deploy`);
       console.log(`You can NOT deploy ${canDeploy}`);
     }
   }
