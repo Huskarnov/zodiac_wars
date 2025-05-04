@@ -1,6 +1,6 @@
 #aries {
   position: absolute;
-  background-image: url('/ressources/images/aries.webp');
+  background-image: url('/ressources/images/aries.png');
   background-size: cover;
 
   height: 200px;
@@ -12,7 +12,7 @@
 
 #taurus {
   position: absolute;
-  background-image: url('/ressources/images/taurus.webp');
+  background-image: url('/ressources/images/taurus.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -23,7 +23,7 @@
 
 #gemini {
   position: absolute;
-  background-image: url('/ressources/images/gemini.webp');
+  background-image: url('/ressources/images/gemini.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -35,7 +35,7 @@
 
 #cancer {
   position: absolute;
-  background-image: url('/ressources/images/cancer.webp');
+  background-image: url('/ressources/images/cancer.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -47,7 +47,7 @@
 
 #leo {
   position: absolute;
-  background-image: url('/ressources/images/leo.webp');
+  background-image: url('/ressources/images/leo.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -59,7 +59,7 @@
 
 #virgo {
   position: absolute;
-  background-image: url('/ressources/images/virgo.webp');
+  background-image: url('/ressources/images/virgo.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -71,7 +71,7 @@
 
 #libra {
   position: absolute;
-  background-image: url('/ressources/images/libra.webp');
+  background-image: url('/ressources/images/libra.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -83,7 +83,7 @@
 
 #scorpio {
   position: absolute;
-  background-image: url('/ressources/images/scorpio.webp');
+  background-image: url('/ressources/images/scorpio.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -95,7 +95,7 @@
 
 #sagittarius {
   position: absolute;
-  background-image: url('/ressources/images/sagittarius.webp');
+  background-image: url('/ressources/images/sagittarius.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -107,7 +107,7 @@
 
 #capricorn {
   position: absolute;
-  background-image: url('/ressources/images/capricorn.webp');
+  background-image: url('/ressources/images/capricorn.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -118,7 +118,7 @@
 
 #aquarius {
   position: absolute;
-  background-image: url('/ressources/images/aquarius.webp');
+  background-image: url('/ressources/images/aquarius.png');
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -128,7 +128,7 @@
 }
 #pisces {
   position: absolute;
-  background-image: url('/ressources/images/pisces.webp');
+  background-image: url('/ressources/images/pisces.png');
   background-size: cover;
   height: 200px;
   width: 200px;

@@ -1,69 +1,99 @@
 #battleInterface {
-  /* display: none; */
+  /* display: flex; */
   display: none;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 11px;
   width: 400px;
-  height: 500px;
+  /* height: 100%; */
   /* background-color: blue; */
+  /* border-radius: 50%; */
 }
 #battleTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  height: 100px;
+
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.253);
+  padding: 5px 30px;
+
+  box-shadow: rgba(80, 79, 79, 0.4) 0px 2px 4px,
+    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
+    rgba(24, 4, 4, 0.2) 0px -3px 0px inset;
+
+  border-style: double;
 }
-#battleTitle > h3 {
+#battleTitle > .battleTitle {
+  display: flex;
   color: white;
   font-size: 2rem;
 }
 #battleTitle > h4 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 #avatars {
   width: 100%;
-  height: 59%;
+  height: 250px;
   /* background-color: yellow; */
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-#avatars div {
+#avatars > div {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 
-  border-radius: 20px;
+  /* border-radius: 50%; */
 
-  width: 50%;
+  width: 200px;
 
   gap: 5px;
+
+  border-radius: 5px;
+  padding: 5px 30px;
+
+  box-shadow: rgba(80, 79, 79, 0.4) 0px 2px 4px,
+    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
+    rgba(24, 4, 4, 0.2) 0px -3px 0px inset;
+
+  border-style: double;
 }
 #avatars > div > div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   /* width: 100%; */
-  height: 100%;
+  /* height: 80%; */
   /* background-color: aqua; */
 }
 #avatars > div > div > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  /* width: 100px; */
+  font-size: 1rem;
   color: white;
+  border-radius: 5px;
 }
 #avatars > div > div > div:nth-child(1) {
-  background-color: rgba(0, 128, 0, 0.185);
+  background-color: rgba(0, 128, 0, 0.123);
 }
 #avatars > div > div > div:nth-child(2) {
   background-color: rgba(128, 0, 0, 0.185);
+}
+
+#avatars > div > div > div {
+  display: flex;
+  background-color: aqua;
 }
 #avatars div h4 {
   font-size: 1.5rem;
@@ -74,14 +104,39 @@
   /* background-color: green; */
   background-image: url(/ressources/images/avatars/virgo/virgo1.webp);
   background-size: cover;
+
+  box-shadow: rgba(77, 16, 16, 0.4) 0px 2px 4px,
+    rgba(75, 7, 7, 0.3) 0px 7px 13px -3px,
+    rgba(224, 211, 211, 0.2) 0px -3px 0px inset;
 }
 #attacker {
   background-image: url(/ressources/images/avatars/taurus/taurus1.webp);
   background-size: cover;
+
+  box-shadow: rgba(77, 16, 16, 0.4) 0px 2px 4px,
+    rgba(75, 7, 7, 0.3) 0px 7px 13px -3px,
+    rgba(224, 211, 211, 0.2) 0px -3px 0px inset;
 }
 
 #battleInterface > button {
   font-size: 2rem;
-  border-radius: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.644);
+
+  height: 100px;
+
+  border-radius: 5px;
   padding: 5px 30px;
+
+  box-shadow: rgba(80, 79, 79, 0.4) 0px 2px 4px,
+    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
+    rgba(24, 4, 4, 0.2) 0px -3px 0px inset,
+    rgba(80, 79, 79, 0.4) -2px 2px 4px inset;
+
+  border-style: double;
+
+  cursor: pointer;
+}
+#battleInterface > button:hover {
+  background-color: rgb(27, 27, 27);
 }

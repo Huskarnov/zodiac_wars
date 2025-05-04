@@ -213,7 +213,7 @@
         </div>
       </div>
 
-      <dialog class="introDialog">
+      <dialog open class="introDialog">
         <div class="introPanel">
           <!-- <h2>Zodiac Wars</h2> -->
           <p>Are you the strongest Zodiac Sign?</p>
@@ -245,7 +245,11 @@
 
         <div id="battleInterface">
           <div id="battleTitle">
-            <h3>Vega</h3>
+            <div class="battleTitle">
+              <p>✴</p>
+              <p id="battleStar">Vega</p>
+              <p>✴</p>
+            </div>
             <h4>Dominion: Virgo</h4>
           </div>
           <div id="avatars">
@@ -254,12 +258,12 @@
 
               <div id="defendingStats">
                 <div>
-                  <p>HP:</p>
-                  <p>450</p>
+                  <p id="defenderHp">42233333321</p>
                 </div>
                 <div>
-                  <p>ATK:</p>
-                  <p>50</p>
+                  <p>⚔</p>
+                  <p id="defenderDmg">50</p>
+                  <p>⚔</p>
                 </div>
               </div>
             </div>
@@ -268,12 +272,12 @@
 
               <div id="attackingStats">
                 <div>
-                  <p>HP:</p>
-                  <p>450</p>
+                  <p id="attackingHp">450</p>
                 </div>
                 <div>
-                  <p>ATK:</p>
-                  <p>50</p>
+                  <p>⚔</p>
+                  <p id="attackingDmg">50</p>
+                  <p>⚔</p>
                 </div>
               </div>
             </div>
