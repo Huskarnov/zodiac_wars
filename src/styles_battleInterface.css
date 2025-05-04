@@ -1,6 +1,6 @@
 #battleInterface {
   /* display: none; */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -28,6 +28,7 @@
   height: 59%;
   /* background-color: yellow; */
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -71,11 +72,11 @@
 }
 #defender {
   /* background-color: green; */
-  background-image: url(/ressources/images/avatars/virgo/virgo1.png);
+  background-image: url(/ressources/images/avatars/virgo/virgo1.webp);
   background-size: cover;
 }
 #attacker {
-  background-image: url(/ressources/images/avatars/taurus/taurus1.png);
+  background-image: url(/ressources/images/avatars/taurus/taurus1.webp);
   background-size: cover;
 }
 

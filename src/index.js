@@ -1,4 +1,4 @@
-//npm install -D webpack webpack-cli file-loader html-loader html-webpack-plugin css-loader style-loader webpack-dev-server webpack-merge
+//npm install -D webpack webpack-cli file-loader webp-loader html-loader html-webpack-plugin css-loader style-loader webpack-dev-server webpack-merge
 
 // import ranniWelcome from './ranniWelcome.mp3';
 

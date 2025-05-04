@@ -1,18 +1,18 @@
 import ranniWelcome from '/ressources/audio/ranniWelcome.mp3';
 import audioTheme from '/ressources/audio/classictheme.mp3';
 
-import ariesPic from '/ressources/images/aries.png';
-import taurusPic from '/ressources/images/taurus.png';
-import geminiPic from '/ressources/images/gemini.png';
-import cancerPic from '/ressources/images/cancer.png';
-import leoPic from '/ressources/images/leo.png';
-import virgoPic from '/ressources/images/virgo.png';
-import libraPic from '/ressources/images/libra.png';
-import scorpioPic from '/ressources/images/scorpio.png';
-import sagittariusPic from '/ressources/images/sagittarius.png';
-import capricornPic from '/ressources/images/capricorn.png';
-import aquariusPic from '/ressources/images/aquarius.png';
-import piscesPic from '/ressources/images/pisces.png';
+import ariesPic from '/ressources/images/aries.webp';
+import taurusPic from '/ressources/images/taurus.webp';
+import geminiPic from '/ressources/images/gemini.webp';
+import cancerPic from '/ressources/images/cancer.webp';
+import leoPic from '/ressources/images/leo.webp';
+import virgoPic from '/ressources/images/virgo.webp';
+import libraPic from '/ressources/images/libra.webp';
+import scorpioPic from '/ressources/images/scorpio.webp';
+import sagittariusPic from '/ressources/images/sagittarius.webp';
+import capricornPic from '/ressources/images/capricorn.webp';
+import aquariusPic from '/ressources/images/aquarius.webp';
+import piscesPic from '/ressources/images/pisces.webp';
 
 let factionChoice;
 
@@ -42,7 +42,6 @@ joinButton.addEventListener('click', () => {
   introPanel.style.display = 'none';
   zodiacChoice.style.display = 'flex';
   anAudio.play();
-  // themeAudio.play();
 });
 
 allSigns.forEach((image, index) => {
@@ -100,6 +99,7 @@ allSigns.forEach((image, index) => {
 
     header.style.display = 'grid';
     playGround.style.display = 'block';
+
     dialogIntro.close();
   });
 });
