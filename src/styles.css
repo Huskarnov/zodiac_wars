@@ -246,7 +246,7 @@ header button:hover {
 
 #playGround {
   /* block */
-  display: block;
+  display: none;
 
   top: 150px;
   position: relative;

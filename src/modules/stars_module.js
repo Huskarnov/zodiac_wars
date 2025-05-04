@@ -106,6 +106,11 @@ class Star {
     const neighborsArray = stars[eventConstellation][starName].neighbors;
     const constellations = Object.keys(stars);
 
+    console.log(
+      `--------- ID: ${starName} is in ${eventConstellation}, 
+      is controlled by ${stars[eventConstellation][starName].defending} ---------`
+    );
+
     const neighboringStars = neighborsArray.filter((item) => {
       if (
         item !== 'aries' &&
@@ -1703,28 +1708,19 @@ let stars = {
 // stars.vega.startCombat();
 // stars.polaris.startCombat();
 
-(function () {
+(function giveConstellationToEachStar() {
   const constellations = Object.keys(stars);
 
   universeStars.forEach((starElement) => {
-    starElement.addEventListener('mouseover', (event) => {
-      const starId = event.currentTarget.id;
+    const starId = starElement.id;
 
-      console.log(`star ID ${starId}`);
-
-      // allocate mother constellation to each star
-      constellations.forEach((constellation) => {
-        if (Object.hasOwn(stars[constellation], starId)) {
-          stars[constellation][starId]['constellation'] = constellation;
-          starElement['constellation'] = constellation;
-
-          console.log(
-            `the clicked star is in the ${stars[constellation][starId].constellation} constellation`
-          );
-        }
-      });
-
-      navigator.clipboard.writeText(`${event.currentTarget.id}`);
+    constellations.forEach((constellation) => {
+      if (Object.hasOwn(stars[constellation], starId)) {
+        stars[constellation][starId]['constellation'] = constellation;
+        starElement['constellation'] = constellation;
+      }
     });
+
+    // navigator.clipboard.writeText(`${event.currentTarget.id}`);
   });
 })();
