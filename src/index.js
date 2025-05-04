@@ -5,6 +5,7 @@
 import './styles.css';
 import './styles_signs.css';
 import './styles_intro.css';
+import './styles_battleInterface.css';
 
 import './modules/global_module';
 import './modules/intro_module';
