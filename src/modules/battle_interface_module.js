@@ -1,14 +1,18 @@
 import { users } from './users_module';
 import { stars, selectedStar, selectedConstellation } from './stars_module';
 
-export { startBattleLoop };
+export { setBattleInterface };
 
+// --------
 const battleStar = document.querySelector('#battleStar');
 const dominion = document.querySelector('#dominion');
+
+const defender = document.querySelector('#defender');
 const defenderName = document.querySelector('#defender > h4');
 const defenderHp = document.querySelector('#defenderHp');
 const defenderDmg = document.querySelector('#defenderDmg');
 
+const attacker = document.querySelector('#attacker');
 const attackerName = document.querySelector('#attacker > h4');
 const attackingHp = document.querySelector('#attackingHp');
 const attackingDmg = document.querySelector('#attackingDmg');
@@ -35,11 +39,69 @@ summonEmpower.addEventListener('mouseleave', (event) => {
 //   attackingHealth,
 //   attackingDamage
 function setBattleInterface() {
-  //   console.log(stars);
-  //   console.log(selectedConstellation);
-  //   console.log(stars[selectedConstellation][selectedStar].name);
+  switch (stars[selectedConstellation][selectedStar].defending) {
+    case 'aries':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/virgo1.webp)';
+      break;
+    case 'taurus':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'gemini':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'cancer':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'leo':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'virgo':
+      defender.style.backgroundImage =
+        'url(./ressources/images/avatars/virgo/virgo1.webp)';
+      break;
+    case 'libra':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'scorpio':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'sagittarius':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'capricorn':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'aquarius':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case 'pisces':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+    case '':
+      defender.style.backgroundImage =
+        'url(/ressources/images/avatars/virgo/taurus1.webp)';
+      break;
+  }
+
+  if (stars[selectedConstellation][selectedStar].peace === true) {
+    attacker.style.display = 'none';
+  } else if (stars[selectedConstellation][selectedStar].peace === false) {
+    attacker.style.display = 'block';
+  }
+
   battleStar.textContent = stars[selectedConstellation][selectedStar].name;
-  dominion.textContent = stars[selectedConstellation][selectedStar].defending;
+  dominion.textContent = `Dominion: ${stars[selectedConstellation][selectedStar].defending}`;
   defenderName.textContent =
     stars[selectedConstellation][selectedStar].defending;
   defenderHp.textContent =
@@ -54,18 +116,22 @@ function setBattleInterface() {
   attackingDmg.textContent =
     stars[selectedConstellation][selectedStar].attackingDamage;
 
-  if (stars[selectedConstellation][selectedStar].peace) {
-    summonEmpowerButton.textContent = 'Summon Avatar';
-  } else {
+  if (
+    stars[selectedConstellation][selectedStar].defending ===
+      users.me.zodiacSign ||
+    stars[selectedConstellation][selectedStar].attacking === users.me.zodiacSign
+  ) {
     summonEmpowerButton.textContent = 'Empower Avatar';
+  } else {
+    summonEmpowerButton.textContent = 'Summon Avatar';
   }
 
-  //   hpValue.textContent = 'xxx';
-  //   dmgValue.textContent = 'xxx';
+  hpValue.textContent = users.me.health;
+  dmgValue.textContent = users.me.damage;
 }
 
-function startBattleLoop() {
-  const battleInterfaceLoop = setInterval(() => {
-    setBattleInterface();
-  }, 100);
-}
+// function startBattleLoop() {
+//   const battleInterfaceLoop = setInterval(() => {
+//     setBattleInterface();
+//   }, 100);
+// }

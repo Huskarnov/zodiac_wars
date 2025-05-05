@@ -1,6 +1,6 @@
 export { stars, selectedStar, selectedConstellation };
 import { users } from './users_module';
-import { startBattleLoop } from './battle_interface_module';
+import { setBattleInterface } from './battle_interface_module';
 // users.me.zodiacSign
 
 const universe = document.querySelector('.universe');
@@ -75,6 +75,7 @@ class Star {
         console.log(`attackers health: ${this.attackingAvatar.health}`);
         whoAttacks = 'attacker';
       }
+      setBattleInterface();
     }, 100);
   }
   endCombat() {
@@ -116,7 +117,7 @@ class Star {
 
     selectedStar = starName;
     selectedConstellation = eventConstellation;
-    startBattleLoop();
+    setBattleInterface();
 
     console.log(
       `--------- ID: ${starName} is in ${eventConstellation}, 
@@ -194,7 +195,6 @@ class Star {
     if (canDeploy) {
       console.log(`You can deploy ${canDeploy}`);
       battleInterface.style.display = 'flex';
-      // dialog.style.display = 'flex';
       battleDialog.show();
     } else {
       alert(`You a need a connected star to deploy`);
@@ -952,7 +952,7 @@ let stars = {
     ),
     gamma_trianguli: new Star(
       'gamma_trianguli',
-      false,
+      true,
       document.querySelector('#gamma_trianguli'),
       'aries',
       100,

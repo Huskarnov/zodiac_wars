@@ -48,7 +48,7 @@ allSigns.forEach((image, index) => {
   image.addEventListener('click', (event) => {
     switch (index) {
       case 0:
-        factionChoice = 'ariesPic';
+        factionChoice = 'aries';
         factionImage.src = ariesPic;
         break;
       case 1:
