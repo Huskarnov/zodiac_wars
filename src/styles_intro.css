@@ -1,4 +1,4 @@
-dialog {
+.introDialog {
   position: fixed;
   /* display: flex;
   justify-content: center;
@@ -16,8 +16,8 @@ dialog {
   border-radius: 50%;
 }
 
-dialog > div {
-  display: flex;
+.introDialog > div {
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;

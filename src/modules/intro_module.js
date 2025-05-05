@@ -21,7 +21,7 @@ const factionImage = document.querySelector('.factionImage');
 
 const header = document.querySelector('header');
 const playGround = document.querySelector('#playGround');
-const dialogIntro = document.querySelector('dialog');
+const dialogIntro = document.querySelector('.introDialog');
 
 const introPanel = document.querySelector('.introPanel');
 const joinButton = document.querySelector('.introPanel button');

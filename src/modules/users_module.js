@@ -1,16 +1,17 @@
 export { users };
 
 class User {
-  constructor(zodiacSign, health, damage, experience) {
+  constructor(zodiacSign, health, damage, souls, experience) {
     this.zodiacSign = zodiacSign;
     this.health = health;
     this.damage = damage;
+    this.souls = souls;
     this.experience = experience;
   }
 }
 
 let users = {
-  me: new User('scorpio', 100, 5, 0),
+  me: new User('scorpio', 100, 5, 10, 0),
 };
 
 // zodiac sign choices

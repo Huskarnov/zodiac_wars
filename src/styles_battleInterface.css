@@ -8,17 +8,18 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 
   background-color: rgba(0, 0, 0, 0.829);
   border: 10px solid rgba(245, 179, 179, 0.034);
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 #battleInterface {
-  /* display: flex; */
-  display: none;
+  display: flex;
+  /* display: none; */
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,6 +28,9 @@
   /* height: 100%; */
   /* background-color: blue; */
   /* border-radius: 50%; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #battleTitle {
   display: flex;
@@ -39,11 +43,13 @@
   background-color: rgb(0, 0, 0);
   padding: 5px 30px;
 
-  box-shadow: rgba(80, 79, 79, 0.4) 0px 2px 4px,
-    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
-    rgba(24, 4, 4, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(80, 79, 79, 0.199) 0px 2px 5px,
+    rgba(27, 5, 5, 0.171) 0px 7px 5px -3px,
+    rgba(24, 4, 4, 0.2) 0px -3px 5px inset;
 
   border-style: double;
+
+  background-image: url(/ressources/images/logo.webp);
 }
 #battleTitle > .battleTitle {
   display: flex;
@@ -136,12 +142,12 @@
     rgba(224, 211, 211, 0.2) 0px -3px 0px inset;
 }
 
-#battleInterface > button {
-  font-size: 2rem;
+#summonEmpower > button {
+  font-size: 1.5rem;
   color: white;
   background-color: rgb(0, 0, 0);
 
-  height: 100px;
+  height: 50px;
 
   border-radius: 5px;
   padding: 5px 30px;
@@ -155,6 +161,79 @@
 
   cursor: pointer;
 }
-#battleInterface > button:hover {
+#summonEmpower > button:hover {
   background-color: rgb(27, 27, 27);
+}
+
+#summonEmpower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 20px;
+}
+
+#userPower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 1.5rem;
+  color: white;
+  /* background-color: rgb(0, 0, 0); */
+
+  height: 50px;
+
+  border-radius: 5px;
+  padding: 5px 30px;
+
+  visibility: hidden;
+  /* box-shadow: rgba(80, 79, 79, 0.4) 0px 2px 4px,
+    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
+    rgba(24, 4, 4, 0.2) 0px -3px 0px inset,
+    rgba(80, 79, 79, 0.4) -2px 2px 4px inset; */
+  /* border-radius: 20px; */
+}
+
+#soulsValue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#soulsNumber {
+  font-size: 1.3rem;
+  /* background-color: red; */
+}
+#up {
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#up:hover {
+  color: green;
+}
+#down {
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#down:hover {
+  color: red;
+}
+
+#hpAndDmg {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+#hp {
+  display: flex;
+  gap: 3px;
+}
+#dmg {
+  display: flex;
+  gap: 3px;
 }
