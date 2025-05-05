@@ -144,7 +144,7 @@
     rgba(80, 79, 79, 0.815) -2px 2px 4px inset;
 }
 #defender {
-  background-image: url(/ressources/images/avatars/virgo1.webp);
+  /* background-image: url(/ressources/images/avatars/virgo1.webp); */
   background-size: cover;
 
   box-shadow: rgba(77, 16, 16, 0.4) 0px 2px 4px,
@@ -152,7 +152,7 @@
     rgba(224, 211, 211, 0.2) 0px -3px 0px inset;
 }
 #attacker {
-  background-image: url(/ressources/images/avatars/sagittarius1.webp);
+  /* background-image: url(/ressources/images/avatars/sagittarius1.webp); */
   background-size: cover;
 
   box-shadow: rgba(77, 16, 16, 0.4) 0px 2px 4px,

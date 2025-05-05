@@ -1,34 +1,35 @@
-import { users } from './users_module';
-import { stars, selectedStar, selectedConstellation } from './stars_module';
+import { users } from "./users_module";
+import { stars, selectedStar, selectedConstellation } from "./stars_module";
+// import ariesPic from "/ressources/images/avatars/virgo1.jpeg";
 
 export { setBattleInterface };
 
 // --------
-const battleStar = document.querySelector('#battleStar');
-const dominion = document.querySelector('#dominion');
+const battleStar = document.querySelector("#battleStar");
+const dominion = document.querySelector("#dominion");
 
-const defender = document.querySelector('#defender');
-const defenderName = document.querySelector('#defender > h4');
-const defenderHp = document.querySelector('#defenderHp');
-const defenderDmg = document.querySelector('#defenderDmg');
+const defender = document.querySelector("#defender");
+const defenderName = document.querySelector("#defender > h4");
+const defenderHp = document.querySelector("#defenderHp");
+const defenderDmg = document.querySelector("#defenderDmg");
 
-const attacker = document.querySelector('#attacker');
-const attackerName = document.querySelector('#attacker > h4');
-const attackingHp = document.querySelector('#attackingHp');
-const attackingDmg = document.querySelector('#attackingDmg');
+const attacker = document.querySelector("#attacker");
+const attackerName = document.querySelector("#attacker > h4");
+const attackingHp = document.querySelector("#attackingHp");
+const attackingDmg = document.querySelector("#attackingDmg");
 
-const summonEmpowerButton = document.querySelector('#summonEmpowerButton');
-const hpValue = document.querySelector('#hpValue');
-const dmgValue = document.querySelector('#dmgValue');
+const summonEmpowerButton = document.querySelector("#summonEmpowerButton");
+const hpValue = document.querySelector("#hpValue");
+const dmgValue = document.querySelector("#dmgValue");
 // --------
-const summonEmpower = document.querySelector('#summonEmpower');
-const userPower = document.querySelector('#userPower');
+const summonEmpower = document.querySelector("#summonEmpower");
+const userPower = document.querySelector("#userPower");
 
-summonEmpower.addEventListener('mouseenter', (event) => {
-  userPower.style.visibility = 'visible';
+summonEmpower.addEventListener("mouseenter", (event) => {
+  userPower.style.visibility = "visible";
 });
-summonEmpower.addEventListener('mouseleave', (event) => {
-  userPower.style.visibility = 'hidden';
+summonEmpower.addEventListener("mouseleave", (event) => {
+  userPower.style.visibility = "hidden";
 });
 //   starName,
 //   peace,
@@ -39,7 +40,9 @@ summonEmpower.addEventListener('mouseleave', (event) => {
 //   attackingHealth,
 //   attackingDamage
 function setBattleInterface() {
-  defender.style.backgroundImage = 'url(./virgo1.jpeg)';
+  defender.style.backgroundImage =
+    "url(/ressources/images/avatars/virgo1.jpeg)";
+
   // document.body.style.backgroundImage = "url('img_tree.png')";
 
   // switch (stars[selectedConstellation][selectedStar].defending) {
@@ -98,9 +101,9 @@ function setBattleInterface() {
   // }
 
   if (stars[selectedConstellation][selectedStar].peace === true) {
-    attacker.style.display = 'none';
+    attacker.style.display = "none";
   } else if (stars[selectedConstellation][selectedStar].peace === false) {
-    attacker.style.display = 'flex';
+    attacker.style.display = "flex";
   }
 
   battleStar.textContent = stars[selectedConstellation][selectedStar].name;
@@ -124,9 +127,9 @@ function setBattleInterface() {
       users.me.zodiacSign ||
     stars[selectedConstellation][selectedStar].attacking === users.me.zodiacSign
   ) {
-    summonEmpowerButton.textContent = 'Empower our Avatar';
+    summonEmpowerButton.textContent = "Empower our Avatar";
   } else {
-    summonEmpowerButton.textContent = 'Summon our Avatar';
+    summonEmpowerButton.textContent = "Summon our Avatar";
   }
 
   hpValue.textContent = users.me.health;
