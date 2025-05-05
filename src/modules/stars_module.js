@@ -1,9 +1,13 @@
-export { stars };
+export { stars, selectedStar, selectedConstellation };
 import { users } from './users_module';
+import { startBattleLoop } from './battle_interface_module';
 // users.me.zodiacSign
 
 const universe = document.querySelector('.universe');
 const universeStars = Array.from(universe.children);
+
+let selectedStar;
+let selectedConstellation;
 
 // const dialog = document.querySelector('.introDialog');
 const battleDialog = document.querySelector('#battleDialog');
@@ -109,6 +113,10 @@ class Star {
     let eventConstellation = event.target.constellation;
     const neighborsArray = stars[eventConstellation][starName].neighbors;
     const constellations = Object.keys(stars);
+
+    selectedStar = starName;
+    selectedConstellation = eventConstellation;
+    startBattleLoop();
 
     console.log(
       `--------- ID: ${starName} is in ${eventConstellation}, 
@@ -876,9 +884,9 @@ let stars = {
       'taurus',
       100,
       6,
-      '',
-      0,
-      0,
+      'aries',
+      150,
+      3,
       'saph',
       'dubhe',
       'ruchbah'
