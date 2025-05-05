@@ -39,8 +39,7 @@ summonEmpower.addEventListener('mouseleave', (event) => {
 //   attackingHealth,
 //   attackingDamage
 function setBattleInterface() {
-  defender.style.backgroundImage =
-    'url(/ressources/images/avatars/virgo1.webp)';
+  defender.style.backgroundImage = 'url(./virgo1.jpeg)';
   // document.body.style.backgroundImage = "url('img_tree.png')";
 
   // switch (stars[selectedConstellation][selectedStar].defending) {
