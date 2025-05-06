@@ -127,7 +127,7 @@ function setBattleInterface() {
       attacker.style.backgroundImage = `url(${aquarius})`;
       break;
     case "pisces":
-      defender.style.backgroundImage = `url(${pisces})`;
+      attacker.style.backgroundImage = `url(${pisces})`;
       break;
   }
 
@@ -142,16 +142,16 @@ function setBattleInterface() {
 
   // defenderName.textContent =
   //   stars[selectedConstellation][selectedStar].defending;
-  defenderName.textContent =
-    stars[selectedConstellation][selectedStar].defending;
+  // defenderName.textContent =
+  //   stars[selectedConstellation][selectedStar].defending;
 
   defenderHp.textContent =
     stars[selectedConstellation][selectedStar].defendingAvatar.health;
   defenderDmg.textContent =
     stars[selectedConstellation][selectedStar].defendingAvatar.damage;
 
-  attackerName.textContent =
-    stars[selectedConstellation][selectedStar].attacking;
+  // attackerName.textContent =
+  //   stars[selectedConstellation][selectedStar].attacking;
   attackingHp.textContent =
     stars[selectedConstellation][selectedStar].attackingAvatar.health;
   attackingDmg.textContent =
