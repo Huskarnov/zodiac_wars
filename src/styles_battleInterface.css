@@ -25,13 +25,16 @@
   justify-content: center;
   align-items: center;
   gap: 22px;
-  /* width: 400px; */
-  /* height: 100%; */
+  /* width: 500px;
+  height: 400px; */
   /* background-color: blue; */
   /* border-radius: 50%; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  /* border: 2px solid red;
+  border-radius: 50%; */
 }
 #battleTitle {
   display: flex;
@@ -131,10 +134,10 @@
   color: white;
   text-align: center;
 
-  background-color: #000000e1;
+  background-color: #000000;
   border-radius: 50%;
 
-  transform: translateY(-30px);
+  transform: translateY(-23px);
 
   padding: 0px 20px;
 

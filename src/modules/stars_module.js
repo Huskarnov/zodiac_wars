@@ -207,7 +207,7 @@ class Star {
       alert(`You a need a connected star to deploy`);
       console.log(`You can NOT deploy ${canDeploy}`);
     }
-    this.startCombat();
+    // this.startCombat();
   }
 }
 

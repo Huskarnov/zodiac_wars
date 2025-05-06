@@ -17,6 +17,7 @@ import pisces from "/ressources/images/avatars/pisces.webp";
 export { setBattleInterface };
 
 // --------
+const battleDialog = document.querySelector("#battleDialog");
 const battleStar = document.querySelector("#battleStar");
 const dominion = document.querySelector("#dominion");
 
@@ -31,11 +32,11 @@ const attackingHp = document.querySelector("#attackingHp");
 const attackingDmg = document.querySelector("#attackingDmg");
 
 const summonEmpowerButton = document.querySelector("#summonEmpowerButton");
+const soulsAmount = document.querySelector("#soulsAmount");
 const hpValue = document.querySelector("#hpValue");
 const dmgValue = document.querySelector("#dmgValue");
 // --------
 const summonEmpower = document.querySelector("#summonEmpower");
-const soulsAmount = document.querySelector("#soulsAmount");
 const userPower = document.querySelector("#userPower");
 
 summonEmpower.addEventListener("mouseenter", (event) => {
@@ -138,13 +139,16 @@ function setBattleInterface() {
 
   battleStar.textContent = stars[selectedConstellation][selectedStar].name;
   dominion.textContent = `Dominion: ${stars[selectedConstellation][selectedStar].defending}`;
+
+  // defenderName.textContent =
+  //   stars[selectedConstellation][selectedStar].defending;
   defenderName.textContent =
     stars[selectedConstellation][selectedStar].defending;
+
   defenderHp.textContent =
     stars[selectedConstellation][selectedStar].defendingAvatar.health;
   defenderDmg.textContent =
     stars[selectedConstellation][selectedStar].defendingAvatar.damage;
-  // console.log(stars[selectedConstellation][selectedStar].defendingDamage);
 
   attackerName.textContent =
     stars[selectedConstellation][selectedStar].attacking;
@@ -165,7 +169,6 @@ function setBattleInterface() {
     summonEmpowerButton.style.backgroundColor = "#c70808c5";
   }
 
-  soulsAmount.textContent = users.me.souls;
   hpValue.textContent = users.me.health;
   dmgValue.textContent = users.me.damage;
 }
@@ -183,6 +186,7 @@ summonEmpowerButton.addEventListener("click", () => {
 
     stars[selectedConstellation][selectedStar].empowerAvatar(1);
     users.me.souls -= 1;
+    soulsAmount.textContent = users.me.souls;
 
     if (stars[selectedConstellation][selectedStar].peace === true) {
       stars[selectedConstellation][selectedStar].peace = false;
@@ -190,5 +194,11 @@ summonEmpowerButton.addEventListener("click", () => {
     }
   } else {
     alert("You need more souls");
+  }
+});
+
+battleDialog.addEventListener("click", (event) => {
+  if (event.target == event.currentTarget) {
+    event.currentTarget.close();
   }
 });

@@ -1,4 +1,5 @@
 export { users };
+const soulsAmount = document.querySelector("#soulsAmount");
 
 class User {
   constructor(zodiacSign, health, damage, souls, experience) {
@@ -14,8 +15,9 @@ class User {
     setInterval(() => {
       if (this.souls < 10) {
         this.souls += 1;
+        soulsAmount.textContent = users.me.souls;
       }
-    }, 1000);
+    }, 2000);
   }
 }
 
