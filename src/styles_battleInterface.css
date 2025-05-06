@@ -14,6 +14,7 @@
   background-color: rgba(0, 0, 0, 0.829);
   border: 10px solid rgba(245, 179, 179, 0.034);
   /* border-radius: 50%; */
+  animation: appear 0.2s ease-in 1;
 }
 
 #battleInterface {
@@ -23,7 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 11px;
+  gap: 22px;
   /* width: 400px; */
   /* height: 100%; */
   /* background-color: blue; */
@@ -39,17 +40,14 @@
 
   height: 100px;
 
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.199);
   padding: 5px 30px;
 
-  /* box-shadow: rgba(80, 79, 79, 0.199) 0px 2px 5px,
-    rgba(27, 5, 5, 0.171) 0px 7px 5px -3px,
-    rgba(24, 4, 4, 0.2) 0px -3px 5px inset; */
-  box-shadow: rgba(80, 79, 79, 0.767) 0px 2px 4px,
-    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
-    rgba(24, 4, 4, 0.2) 0px -3px 0px inset,
-    rgba(80, 79, 79, 0.815) 0px 2px 4px inset;
+  /* box-shadow: #504f4fc4 0px 2px 4px, #b8b5b54d 0px 4px 5px 0.5px,
+    #20202033 0px 1px 0px inset, #504f4fd0 3px 2px 4px inset; */
+
+  box-shadow: inset #55555494 2px 1px 7px 1px, inset #242427b4 -2px -2px 6px 0px;
 
   border-style: double;
 
@@ -61,7 +59,6 @@
   font-size: 2rem;
 }
 #battleTitle > h4 {
-  /* position: ab; */
   color: white;
   font-size: 1.3rem;
 }
@@ -77,6 +74,7 @@
 
 #avatars > div {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -93,6 +91,8 @@
     rgba(24, 4, 4, 0.2) 0px -3px 0px inset;
 
   border-style: double;
+
+  /* background-color: aqua; */
 }
 #avatars > div > div {
   display: flex;
@@ -123,7 +123,7 @@
 
 #avatars > div > div > div {
   display: flex;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 #avatars div h4 {
   position: absolute;
@@ -131,7 +131,7 @@
   color: white;
   text-align: center;
 
-  background-color: #000000a1;
+  background-color: #000000e1;
   border-radius: 50%;
 
   transform: translateY(-30px);
@@ -139,12 +139,12 @@
   padding: 0px 20px;
 
   box-shadow: rgba(80, 79, 79, 0.767) 0px 2px 4px,
-    rgba(27, 5, 5, 0.3) 0px 7px 13px -3px,
-    rgba(24, 4, 4, 0.2) 0px -3px 0px inset,
+    rgba(94, 87, 87, 0.3) 0px 7px 13px -3px,
+    rgba(99, 93, 93, 0.2) 0px -3px 0px inset,
     rgba(80, 79, 79, 0.815) -2px 2px 4px inset;
 }
 #defender {
-  /* background-image: url(/ressources/images/avatars/virgo1.webp); */
+  /* background-image: url(/ressources/images/avatars/leo1.webp); */
   background-size: cover;
 
   box-shadow: rgba(77, 16, 16, 0.4) 0px 2px 4px,
@@ -163,7 +163,7 @@
 #summonEmpower > button {
   font-size: 1.5rem;
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(27, 27, 27);
 
   height: 50px;
 
@@ -180,7 +180,7 @@
   cursor: pointer;
 }
 #summonEmpower > button:hover {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(87, 86, 86);
 }
 
 #summonEmpower {
@@ -255,3 +255,9 @@
   display: flex;
   gap: 3px;
 }
+
+/* #defenderImage {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+} */

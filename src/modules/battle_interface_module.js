@@ -1,6 +1,18 @@
 import { users } from "./users_module";
 import { stars, selectedStar, selectedConstellation } from "./stars_module";
-// import ariesPic from "/ressources/images/avatars/virgo1.jpeg";
+
+import aries from "/ressources/images/avatars/aries.webp";
+import taurus from "/ressources/images/avatars/taurus.webp";
+import gemini from "/ressources/images/avatars/gemini.webp";
+import cancer from "/ressources/images/avatars/cancer.webp";
+import leo from "/ressources/images/avatars/leo.webp";
+import virgo from "/ressources/images/avatars/virgo.webp";
+import libra from "/ressources/images/avatars/libra.webp";
+import scorpio from "/ressources/images/avatars/scorpio.webp";
+import sagittarius from "/ressources/images/avatars/sagittarius.webp";
+import capricorn from "/ressources/images/avatars/capricorn.webp";
+import aquarius from "/ressources/images/avatars/aquarius.webp";
+import pisces from "/ressources/images/avatars/pisces.webp";
 
 export { setBattleInterface };
 
@@ -40,65 +52,82 @@ summonEmpower.addEventListener("mouseleave", (event) => {
 //   attackingHealth,
 //   attackingDamage
 function setBattleInterface() {
-  defender.style.backgroundImage =
-    "url(/ressources/images/avatars/virgo1.jpeg)";
-
-  // document.body.style.backgroundImage = "url('img_tree.png')";
-
-  // switch (stars[selectedConstellation][selectedStar].defending) {
-  //   case 'aries':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/virgo1.webp)';
-  //     break;
-  //   case 'taurus':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'gemini':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'cancer':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'leo':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'virgo':
-  //     defender.style.backgroundImage =
-  //       'url(./ressources/images/avatars/virgo/virgo1.webp)';
-  //     break;
-  //   case 'libra':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'scorpio':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'sagittarius':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'capricorn':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'aquarius':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case 'pisces':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  //   case '':
-  //     defender.style.backgroundImage =
-  //       'url(/ressources/images/avatars/virgo/taurus1.webp)';
-  //     break;
-  // }
+  switch (stars[selectedConstellation][selectedStar].defending) {
+    case "aries":
+      defender.style.backgroundImage = `url(${aries})`;
+      break;
+    case "taurus":
+      defender.style.backgroundImage = `url(${taurus})`;
+      break;
+    case "gemini":
+      defender.style.backgroundImage = `url(${gemini})`;
+      break;
+    case "cancer":
+      defender.style.backgroundImage = `url(${cancer})`;
+      break;
+    case "leo":
+      defender.style.backgroundImage = `url(${leo})`;
+      break;
+    case "virgo":
+      defender.style.backgroundImage = `url(${virgo})`;
+      break;
+    case "libra":
+      defender.style.backgroundImage = `url(${libra})`;
+      break;
+    case "scorpio":
+      defender.style.backgroundImage = `url(${scorpio})`;
+      break;
+    case "sagittarius":
+      defender.style.backgroundImage = `url(${sagittarius})`;
+      break;
+    case "capricorn":
+      defender.style.backgroundImage = `url(${capricorn})`;
+      break;
+    case "aquarius":
+      defender.style.backgroundImage = `url(${aquarius})`;
+      break;
+    case "pisces":
+      defender.style.backgroundImage = `url(${pisces})`;
+      break;
+  }
+  switch (stars[selectedConstellation][selectedStar].attacking) {
+    case "aries":
+      attacker.style.backgroundImage = `url(${aries})`;
+      break;
+    case "taurus":
+      attacker.style.backgroundImage = `url(${taurus})`;
+      break;
+    case "gemini":
+      attacker.style.backgroundImage = `url(${gemini})`;
+      break;
+    case "cancer":
+      attacker.style.backgroundImage = `url(${cancer})`;
+      break;
+    case "leo":
+      attacker.style.backgroundImage = `url(${leo})`;
+      break;
+    case "virgo":
+      attacker.style.backgroundImage = `url(${virgo})`;
+      break;
+    case "libra":
+      attacker.style.backgroundImage = `url(${libra})`;
+      break;
+    case "scorpio":
+      attacker.style.backgroundImage = `url(${scorpio})`;
+      break;
+    case "sagittarius":
+      attacker.style.backgroundImage = `url(${sagittarius})`;
+      break;
+    case "capricorn":
+      attacker.style.backgroundImage = `url(${capricorn})`;
+      break;
+    case "aquarius":
+      attacker.style.backgroundImage = `url(${aquarius})`;
+      break;
+    case "pisces":
+      defender.style.backgroundImage = `url(${pisces})`;
+      break;
+  }
 
   if (stars[selectedConstellation][selectedStar].peace === true) {
     attacker.style.display = "none";
@@ -108,19 +137,20 @@ function setBattleInterface() {
 
   battleStar.textContent = stars[selectedConstellation][selectedStar].name;
   dominion.textContent = `Dominion: ${stars[selectedConstellation][selectedStar].defending}`;
-  // defenderName.textContent =
-  //   stars[selectedConstellation][selectedStar].defending;
-  // defenderHp.textContent =
-  //   stars[selectedConstellation][selectedStar].defendingHealth;
-  // defenderDmg.textContent =
-  //   stars[selectedConstellation][selectedStar].defendingDamage;
+  defenderName.textContent =
+    stars[selectedConstellation][selectedStar].defending;
+  defenderHp.textContent =
+    stars[selectedConstellation][selectedStar].defendingAvatar.health;
+  defenderDmg.textContent =
+    stars[selectedConstellation][selectedStar].defendingAvatar.damage;
+  // console.log(stars[selectedConstellation][selectedStar].defendingDamage);
 
-  // attackerName.textContent =
-  //   stars[selectedConstellation][selectedStar].attacking;
-  // attackingHp.textContent =
-  //   stars[selectedConstellation][selectedStar].attackingHealth;
-  // attackingDmg.textContent =
-  //   stars[selectedConstellation][selectedStar].attackingDamage;
+  attackerName.textContent =
+    stars[selectedConstellation][selectedStar].attacking;
+  attackingHp.textContent =
+    stars[selectedConstellation][selectedStar].attackingAvatar.health;
+  attackingDmg.textContent =
+    stars[selectedConstellation][selectedStar].attackingAvatar.damage;
 
   if (
     stars[selectedConstellation][selectedStar].defending ===
@@ -136,8 +166,17 @@ function setBattleInterface() {
   dmgValue.textContent = users.me.damage;
 }
 
-// function startBattleLoop() {
-//   const battleInterfaceLoop = setInterval(() => {
-//     setBattleInterface();
-//   }, 100);
-// }
+summonEmpowerButton.addEventListener("click", () => {
+  if (
+    stars[selectedConstellation][selectedStar].peace === true &&
+    stars[selectedConstellation][selectedStar].defending !== users.me.zodiacSign
+  ) {
+    stars[selectedConstellation][selectedStar].attacking = users.me.zodiacSign;
+  }
+
+  stars[selectedConstellation][selectedStar].empowerAvatar(1);
+
+  if (stars[selectedConstellation][selectedStar].peace === true) {
+    stars[selectedConstellation][selectedStar].startCombat();
+  }
+});
