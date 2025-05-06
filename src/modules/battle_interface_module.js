@@ -158,9 +158,11 @@ function setBattleInterface() {
       users.me.zodiacSign ||
     stars[selectedConstellation][selectedStar].attacking === users.me.zodiacSign
   ) {
-    summonEmpowerButton.textContent = "Empower our Avatar";
+    summonEmpowerButton.textContent = "Empower ⮉";
+    summonEmpowerButton.style.backgroundColor = "#024608c5";
   } else {
-    summonEmpowerButton.textContent = "Summon our Avatar";
+    summonEmpowerButton.textContent = "Summon ⮋";
+    summonEmpowerButton.style.backgroundColor = "#c70808c5";
   }
 
   soulsAmount.textContent = users.me.souls;

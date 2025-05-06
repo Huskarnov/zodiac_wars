@@ -7,6 +7,15 @@ class User {
     this.damage = damage;
     this.souls = 10;
     this.experience = experience;
+    this.soulsReload();
+  }
+
+  soulsReload() {
+    setInterval(() => {
+      if (this.souls < 10) {
+        this.souls += 1;
+      }
+    }, 1000);
   }
 }
 

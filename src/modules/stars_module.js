@@ -217,19 +217,19 @@ let stars = {
   ursa_minor: {
     polaris: new Star(
       "polaris",
-      false,
+      true,
       document.querySelector("#polaris"),
       "aries",
       130,
       8,
-      "libra",
-      200,
-      5,
+      "",
+      0,
+      0,
       "yildun"
     ),
     yildun: new Star(
       "yildun",
-      false,
+      true,
       document.querySelector("#yildun"),
       "aries",
       130,
@@ -242,7 +242,7 @@ let stars = {
     ),
     epsilon_ursae: new Star(
       "epsilon_ursae",
-      false,
+      true,
       document.querySelector("#epsilon_ursae"),
       "aries",
       130,
@@ -255,7 +255,7 @@ let stars = {
     ),
     zeta_ursae: new Star(
       "zeta_ursae",
-      false,
+      true,
       document.querySelector("#zeta_ursae"),
       "aries",
       130,
@@ -269,7 +269,7 @@ let stars = {
     ),
     eta_ursae: new Star(
       "eta_ursae",
-      false,
+      true,
       document.querySelector("#eta_ursae"),
       "libra",
       130,
@@ -283,7 +283,7 @@ let stars = {
     ),
     pherkad: new Star(
       "pherkad",
-      false,
+      true,
       document.querySelector("#pherkad"),
       "virgo",
       130,
@@ -298,7 +298,7 @@ let stars = {
     ),
     kochab: new Star(
       "kochab",
-      false,
+      true,
       document.querySelector("#kochab"),
       "gemini",
       130,
@@ -316,7 +316,7 @@ let stars = {
   scutum: {
     alpha_scuti: new Star(
       "alpha_scuti",
-      false,
+      true,
       document.querySelector("#alpha_scuti"),
       "sagittarius",
       100,
@@ -331,7 +331,7 @@ let stars = {
     ),
     beta_scuti: new Star(
       "beta_scuti",
-      false,
+      true,
       document.querySelector("#beta_scuti"),
       "scorpio",
       100,
@@ -345,7 +345,7 @@ let stars = {
     ),
     delta_scuti: new Star(
       "delta_scuti",
-      false,
+      true,
       document.querySelector("#delta_scuti"),
       "scorpio",
       100,
@@ -359,7 +359,7 @@ let stars = {
     ),
     gamma_scuti: new Star(
       "gamma_scuti",
-      false,
+      true,
       document.querySelector("#gamma_scuti"),
       "sagittarius",
       100,
@@ -374,7 +374,7 @@ let stars = {
   cauda: {
     iota_serpentis: new Star(
       "iota_serpentis",
-      false,
+      true,
       document.querySelector("#iota_serpentis"),
       "sagittarius",
       100,
@@ -387,7 +387,7 @@ let stars = {
     ),
     xi_serpentis: new Star(
       "xi_serpentis",
-      false,
+      true,
       document.querySelector("#xi_serpentis"),
       "scorpio",
       100,
@@ -400,7 +400,7 @@ let stars = {
     ),
     mu_serpentis: new Star(
       "mu_serpentis",
-      false,
+      true,
       document.querySelector("#mu_serpentis"),
       "scorpio",
       100,
@@ -413,7 +413,7 @@ let stars = {
     ),
     rho_serpentis: new Star(
       "rho_serpentis",
-      false,
+      true,
       document.querySelector("#rho_serpentis"),
       "scorpio",
       100,
@@ -427,7 +427,7 @@ let stars = {
     ),
     sigma_serpentis: new Star(
       "sigma_serpentis",
-      false,
+      true,
       document.querySelector("#sigma_serpentis"),
       "scorpio",
       100,
@@ -443,7 +443,7 @@ let stars = {
   caput: {
     unukalhai: new Star(
       "unukalhai",
-      false,
+      true,
       document.querySelector("#unukalhai"),
       "libra",
       100,
@@ -456,7 +456,7 @@ let stars = {
     ),
     beta_serpentis: new Star(
       "beta_serpentis",
-      false,
+      true,
       document.querySelector("#beta_serpentis"),
       "virgo",
       100,
@@ -469,7 +469,7 @@ let stars = {
     ),
     gamma_serpentis: new Star(
       "gamma_serpentis",
-      false,
+      true,
       document.querySelector("#gamma_serpentis"),
       "virgo",
       100,
@@ -482,7 +482,7 @@ let stars = {
     ),
     delta_serpentis: new Star(
       "delta_serpentis",
-      false,
+      true,
       document.querySelector("#delta_serpentis"),
       "virgo",
       100,
@@ -497,7 +497,7 @@ let stars = {
     ),
     epsilon_serpentis: new Star(
       "epsilon_serpentis",
-      false,
+      true,
       document.querySelector("#epsilon_serpentis"),
       "virgo",
       100,
@@ -511,7 +511,7 @@ let stars = {
     ),
     theta_serpentis: new Star(
       "theta_serpentis",
-      false,
+      true,
       document.querySelector("#theta_serpentis"),
       "virgo",
       100,
@@ -524,7 +524,7 @@ let stars = {
     ),
     eta_serpentis: new Star(
       "eta_serpentis",
-      false,
+      true,
       document.querySelector("#eta_serpentis"),
       "virgo",
       100,
@@ -538,7 +538,7 @@ let stars = {
     ),
     zeta_serpentis: new Star(
       "zeta_serpentis",
-      false,
+      true,
       document.querySelector("#zeta_serpentis"),
       "virgo",
       100,
@@ -554,7 +554,7 @@ let stars = {
   berenices: {
     beta_berenices: new Star(
       "beta_berenices",
-      false,
+      true,
       document.querySelector("#beta_berenices"),
       "virgo",
       100,
@@ -567,7 +567,7 @@ let stars = {
     ),
     alpha_berenices: new Star(
       "alpha_berenices",
-      false,
+      true,
       document.querySelector("#alpha_berenices"),
       "leo",
       100,
@@ -581,7 +581,7 @@ let stars = {
     ),
     gamma_berenices: new Star(
       "gamma_berenices",
-      false,
+      true,
       document.querySelector("#gamma_berenices"),
       "virgo",
       100,
@@ -595,7 +595,7 @@ let stars = {
   leo_minor: {
     alpha_leonis_minoris: new Star(
       "alpha_leonis_minoris",
-      false,
+      true,
       document.querySelector("#alpha_leonis_minoris"),
       "leo",
       100,
@@ -609,7 +609,7 @@ let stars = {
     ),
     Beta_leonis_minoris: new Star(
       "Beta_leonis_minoris",
-      false,
+      true,
       document.querySelector("#Beta_leonis_minoris"),
       "leo",
       100,
@@ -623,7 +623,7 @@ let stars = {
     ),
     kappa_leonis_minoris: new Star(
       "kappa_leonis_minoris",
-      false,
+      true,
       document.querySelector("#kappa_leonis_minoris"),
       "leo",
       100,
@@ -636,7 +636,7 @@ let stars = {
     ),
     zeta_leonis_minoris: new Star(
       "zeta_leonis_minoris",
-      false,
+      true,
       document.querySelector("#zeta_leonis_minoris"),
       "cancer",
       100,
@@ -650,7 +650,7 @@ let stars = {
     ),
     epsilon_leonis_minoris: new Star(
       "epsilon_leonis_minoris",
-      false,
+      true,
       document.querySelector("#epsilon_leonis_minoris"),
       "leo",
       100,
@@ -666,7 +666,7 @@ let stars = {
   lynx: {
     alsciaukat: new Star(
       "alsciaukat",
-      false,
+      true,
       document.querySelector("#alsciaukat"),
       "cancer",
       100,
@@ -679,7 +679,7 @@ let stars = {
     ),
     phi_lyncis: new Star(
       "phi_lyncis",
-      false,
+      true,
       document.querySelector("#phi_lyncis"),
       "cancer",
       100,
@@ -692,7 +692,7 @@ let stars = {
     ),
     epsilon_lyncis: new Star(
       "epsilon_lyncis",
-      false,
+      true,
       document.querySelector("#epsilon_lyncis"),
       "cancer",
       100,
@@ -706,7 +706,7 @@ let stars = {
     ),
     nu_lyncis: new Star(
       "nu_lyncis",
-      false,
+      true,
       document.querySelector("#nu_lyncis"),
       "cancer",
       100,
@@ -720,7 +720,7 @@ let stars = {
     ),
     delta_lyncis: new Star(
       "delta_lyncis",
-      false,
+      true,
       document.querySelector("#delta_lyncis"),
       "cancer",
       100,
@@ -733,7 +733,7 @@ let stars = {
     ),
     kappa_lyncis: new Star(
       "kappa_lyncis",
-      false,
+      true,
       document.querySelector("#kappa_lyncis"),
       "cancer",
       100,
@@ -743,11 +743,12 @@ let stars = {
       0,
       "hassaleh",
       "lambda_lyncis",
+      "delta_lyncis",
       "cancer"
     ),
     lambda_lyncis: new Star(
       "lambda_lyncis",
-      false,
+      true,
       document.querySelector("#lambda_lyncis"),
       "cancer",
       100,
@@ -760,7 +761,7 @@ let stars = {
     ),
     omega_lyncis: new Star(
       "omega_lyncis",
-      false,
+      true,
       document.querySelector("#omega_lyncis"),
       "cancer",
       100,
@@ -775,7 +776,7 @@ let stars = {
   auriga: {
     capella: new Star(
       "capella",
-      false,
+      true,
       document.querySelector("#capella"),
       "taurus",
       100,
@@ -788,7 +789,7 @@ let stars = {
     ),
     menkalinan: new Star(
       "menkalinan",
-      false,
+      true,
       document.querySelector("#menkalinan"),
       "gemini",
       100,
@@ -802,7 +803,7 @@ let stars = {
     ),
     mahasim: new Star(
       "mahasim",
-      false,
+      true,
       document.querySelector("#mahasim"),
       "gemini",
       100,
@@ -816,7 +817,7 @@ let stars = {
     ),
     hassaleh: new Star(
       "hassaleh",
-      false,
+      true,
       document.querySelector("#hassaleh"),
       "cancer",
       100,
@@ -830,7 +831,7 @@ let stars = {
     ),
     almaaz: new Star(
       "almaaz",
-      false,
+      true,
       document.querySelector("#almaaz"),
       "gemini",
       100,
@@ -844,7 +845,7 @@ let stars = {
     ),
     theta_aurigae: new Star(
       "theta_aurigae",
-      false,
+      true,
       document.querySelector("#theta_aurigae"),
       "gemini",
       100,
@@ -860,7 +861,7 @@ let stars = {
   cassiopeia: {
     schedar: new Star(
       "schedar",
-      false,
+      true,
       document.querySelector("#schedar"),
       "aries",
       100,
@@ -873,7 +874,7 @@ let stars = {
     ),
     saph: new Star(
       "saph",
-      false,
+      true,
       document.querySelector("#saph"),
       "aries",
       100,
@@ -887,21 +888,21 @@ let stars = {
     ),
     tsih: new Star(
       "tsih",
-      false,
+      true,
       document.querySelector("#tsih"),
       "taurus",
       100,
       4,
-      "aries",
-      150,
-      3,
+      "",
+      0,
+      0,
       "saph",
       "dubhe",
       "ruchbah"
     ),
     ruchbah: new Star(
       "ruchbah",
-      false,
+      true,
       document.querySelector("#ruchbah"),
       "taurus",
       100,
@@ -915,7 +916,7 @@ let stars = {
     ),
     segin: new Star(
       "segin",
-      false,
+      true,
       document.querySelector("#segin"),
       "taurus",
       100,
@@ -931,7 +932,7 @@ let stars = {
   triangulum: {
     beta_trianguli: new Star(
       "beta_trianguli",
-      false,
+      true,
       document.querySelector("#beta_trianguli"),
       "pisces",
       100,
@@ -946,7 +947,7 @@ let stars = {
     ),
     alpha_trianguli: new Star(
       "alpha_trianguli",
-      false,
+      true,
       document.querySelector("#alpha_trianguli"),
       "aries",
       100,
@@ -976,7 +977,7 @@ let stars = {
   pegasus: {
     enif: new Star(
       "enif",
-      false,
+      true,
       document.querySelector("#enif"),
       "aquarius",
       100,
@@ -989,7 +990,7 @@ let stars = {
     ),
     scheat: new Star(
       "scheat",
-      false,
+      true,
       document.querySelector("#scheat"),
       "aquarius",
       100,
@@ -1005,7 +1006,7 @@ let stars = {
     ),
     markab: new Star(
       "markab",
-      false,
+      true,
       document.querySelector("#markab"),
       "pisces",
       100,
@@ -1020,7 +1021,7 @@ let stars = {
     ),
     algenib: new Star(
       "algenib",
-      false,
+      true,
       document.querySelector("#algenib"),
       "pisces",
       100,
@@ -1034,7 +1035,7 @@ let stars = {
     ),
     matar: new Star(
       "matar",
-      false,
+      true,
       document.querySelector("#matar"),
       "aquarius",
       100,
@@ -1047,7 +1048,7 @@ let stars = {
     ),
     homam: new Star(
       "homam",
-      false,
+      true,
       document.querySelector("#homam"),
       "pisces",
       100,
@@ -1060,7 +1061,7 @@ let stars = {
     ),
     salm: new Star(
       "salm",
-      false,
+      true,
       document.querySelector("#salm"),
       "pisces",
       100,
@@ -1072,7 +1073,7 @@ let stars = {
     ),
     niham: new Star(
       "niham",
-      false,
+      true,
       document.querySelector("#niham"),
       "aries",
       100,
@@ -1086,7 +1087,7 @@ let stars = {
     ),
     iota_pegasi: new Star(
       "iota_pegasi",
-      false,
+      true,
       document.querySelector("#iota_pegasi"),
       "aries",
       100,
@@ -1102,7 +1103,7 @@ let stars = {
   delphinus: {
     rotanev: new Star(
       "rotanev",
-      false,
+      true,
       document.querySelector("#rotanev"),
       "aquarius",
       100,
@@ -1116,7 +1117,7 @@ let stars = {
     ),
     sualocin: new Star(
       "sualocin",
-      false,
+      true,
       document.querySelector("#sualocin"),
       "capricorn",
       100,
@@ -1130,7 +1131,7 @@ let stars = {
     ),
     deneb: new Star(
       "deneb",
-      false,
+      true,
       document.querySelector("#deneb"),
       "capricorn",
       100,
@@ -1145,7 +1146,7 @@ let stars = {
     ),
     delta_delphini: new Star(
       "delta_delphini",
-      false,
+      true,
       document.querySelector("#delta_delphini"),
       "capricorn",
       100,
@@ -1158,7 +1159,7 @@ let stars = {
     ),
     gamma_delphini: new Star(
       "gamma_delphini",
-      false,
+      true,
       document.querySelector("#gamma_delphini"),
       "sagittarius",
       100,
@@ -1174,7 +1175,7 @@ let stars = {
   lyra: {
     vega: new Star(
       "vega",
-      false,
+      true,
       document.querySelector("#vega"),
       "capricorn",
       100,
@@ -1188,7 +1189,7 @@ let stars = {
     ),
     sheliak: new Star(
       "sheliak",
-      false,
+      true,
       document.querySelector("#sheliak"),
       "capricorn",
       100,
@@ -1203,7 +1204,7 @@ let stars = {
     ),
     sulafat: new Star(
       "sulafat",
-      false,
+      true,
       document.querySelector("#sulafat"),
       "capricorn",
       100,
@@ -1217,7 +1218,7 @@ let stars = {
     ),
     delta_lyrae: new Star(
       "delta_lyrae",
-      false,
+      true,
       document.querySelector("#delta_lyrae"),
       "capricorn",
       100,
@@ -1231,7 +1232,7 @@ let stars = {
     ),
     zeta_lyrae: new Star(
       "zeta_lyrae",
-      false,
+      true,
       document.querySelector("#zeta_lyrae"),
       "sagittarius",
       100,
@@ -1244,7 +1245,7 @@ let stars = {
     ),
     epsilon_lyrae: new Star(
       "epsilon_lyrae",
-      false,
+      true,
       document.querySelector("#epsilon_lyrae"),
       "sagittarius",
       100,
@@ -1260,7 +1261,7 @@ let stars = {
   draco: {
     etamin: new Star(
       "etamin",
-      false,
+      true,
       document.querySelector("#etamin"),
       "libra",
       100,
@@ -1273,7 +1274,7 @@ let stars = {
     ),
     rastaban: new Star(
       "rastaban",
-      false,
+      true,
       document.querySelector("#rastaban"),
       "libra",
       100,
@@ -1286,7 +1287,7 @@ let stars = {
     ),
     altais: new Star(
       "altais",
-      false,
+      true,
       document.querySelector("#altais"),
       "libra",
       100,
@@ -1299,7 +1300,7 @@ let stars = {
     ),
     eldib: new Star(
       "eldib",
-      false,
+      true,
       document.querySelector("#eldib"),
       "libra",
       100,
@@ -1308,11 +1309,12 @@ let stars = {
       0,
       0,
       "etamin",
-      "altais"
+      "altais",
+      "athebyne"
     ),
     athebyne: new Star(
       "athebyne",
-      false,
+      true,
       document.querySelector("#athebyne"),
       "libra",
       100,
@@ -1326,7 +1328,7 @@ let stars = {
     ),
     thuban: new Star(
       "thuban",
-      false,
+      true,
       document.querySelector("#thuban"),
       "libra",
       100,
@@ -1340,7 +1342,7 @@ let stars = {
     ),
     tyl: new Star(
       "tyl",
-      false,
+      true,
       document.querySelector("#tyl"),
       "libra",
       100,
@@ -1354,7 +1356,7 @@ let stars = {
     ),
     gianfar: new Star(
       "gianfar",
-      false,
+      true,
       document.querySelector("#gianfar"),
       "virgo",
       100,
@@ -1367,7 +1369,7 @@ let stars = {
     ),
     grumium: new Star(
       "grumium",
-      false,
+      true,
       document.querySelector("#grumium"),
       "leo",
       100,
@@ -1380,7 +1382,7 @@ let stars = {
     ),
     kuma: new Star(
       "kuma",
-      false,
+      true,
       document.querySelector("#kuma"),
       "leo",
       100,
@@ -1394,7 +1396,7 @@ let stars = {
     ),
     arrakis: new Star(
       "arrakis",
-      false,
+      true,
       document.querySelector("#arrakis"),
       "leo",
       100,
@@ -1410,7 +1412,7 @@ let stars = {
   ursa_major: {
     dubhe: new Star(
       "dubhe",
-      false,
+      true,
       document.querySelector("#dubhe"),
       "taurus",
       100,
@@ -1424,7 +1426,7 @@ let stars = {
     ),
     merak: new Star(
       "merak",
-      false,
+      true,
       document.querySelector("#merak"),
       "taurus",
       100,
@@ -1439,7 +1441,7 @@ let stars = {
     ),
     phad: new Star(
       "phad",
-      false,
+      true,
       document.querySelector("#phad"),
       "gemini",
       100,
@@ -1453,7 +1455,7 @@ let stars = {
     ),
     megrez: new Star(
       "megrez",
-      false,
+      true,
       document.querySelector("#megrez"),
       "gemini",
       100,
@@ -1468,7 +1470,7 @@ let stars = {
     ),
     alioth: new Star(
       "alioth",
-      false,
+      true,
       document.querySelector("#alioth"),
       "taurus",
       100,
@@ -1483,7 +1485,7 @@ let stars = {
     ),
     mizar: new Star(
       "mizar",
-      false,
+      true,
       document.querySelector("#mizar"),
       "gemini",
       100,
@@ -1496,7 +1498,7 @@ let stars = {
     ),
     alkaid: new Star(
       "alkaid",
-      false,
+      true,
       document.querySelector("#alkaid"),
       "gemini",
       100,
@@ -1510,7 +1512,7 @@ let stars = {
     ),
     tania: new Star(
       "tania",
-      false,
+      true,
       document.querySelector("#tania"),
       "gemini",
       100,
@@ -1523,7 +1525,7 @@ let stars = {
     ),
     alula_borealis: new Star(
       "alula_borealis",
-      false,
+      true,
       document.querySelector("#alula_borealis"),
       "gemini",
       100,
@@ -1536,7 +1538,7 @@ let stars = {
     ),
     alula_australis: new Star(
       "alula_australis",
-      false,
+      true,
       document.querySelector("#alula_australis"),
       "taurus",
       100,
@@ -1550,7 +1552,7 @@ let stars = {
   camelopardus: {
     beta_camelopardalis: new Star(
       "beta_camelopardalis",
-      false,
+      true,
       document.querySelector("#beta_camelopardalis"),
       "aquarius",
       100,
@@ -1563,7 +1565,7 @@ let stars = {
     ),
     cs_camelopardalis: new Star(
       "cs_camelopardalis",
-      false,
+      true,
       document.querySelector("#cs_camelopardalis"),
       "aquarius",
       100,
@@ -1576,7 +1578,7 @@ let stars = {
     ),
     alpha_camelopardalis: new Star(
       "alpha_camelopardalis",
-      false,
+      true,
       document.querySelector("#alpha_camelopardalis"),
       "pisces",
       100,
@@ -1590,7 +1592,7 @@ let stars = {
     ),
     gamma_camelopardalis: new Star(
       "gamma_camelopardalis",
-      false,
+      true,
       document.querySelector("#gamma_camelopardalis"),
       "pisces",
       100,
@@ -1605,7 +1607,7 @@ let stars = {
     ),
     iota_camelopardalis: new Star(
       "iota_camelopardalis",
-      false,
+      true,
       document.querySelector("#iota_camelopardalis"),
       "pisces",
       100,
@@ -1619,7 +1621,7 @@ let stars = {
     ),
     sigma_camelopardalis: new Star(
       "sigma_camelopardalis",
-      false,
+      true,
       document.querySelector("#sigma_camelopardalis"),
       "pisces",
       100,
@@ -1631,7 +1633,7 @@ let stars = {
     ),
     zeta_camelopardalis: new Star(
       "zeta_camelopardalis",
-      false,
+      true,
       document.querySelector("#zeta_camelopardalis"),
       "aries",
       100,
@@ -1645,7 +1647,7 @@ let stars = {
     ),
     phi_camelopardalis: new Star(
       "phi_camelopardalis",
-      false,
+      true,
       document.querySelector("#phi_camelopardalis"),
       "aries",
       100,
@@ -1660,7 +1662,7 @@ let stars = {
   cepheus: {
     alderamin: new Star(
       "alderamin",
-      false,
+      true,
       document.querySelector("#alderamin"),
       "sagittarius",
       100,
@@ -1674,7 +1676,7 @@ let stars = {
     ),
     alfirk: new Star(
       "alfirk",
-      false,
+      true,
       document.querySelector("#alfirk"),
       "sagittarius",
       100,
@@ -1684,11 +1686,11 @@ let stars = {
       0,
       "alderamin",
       "athebyne",
-      "epsilon_cephei"
+      "errai"
     ),
     errai: new Star(
       "errai",
-      false,
+      true,
       document.querySelector("#errai"),
       "sagittarius",
       100,
@@ -1701,7 +1703,7 @@ let stars = {
     ),
     alradif: new Star(
       "alradif",
-      false,
+      true,
       document.querySelector("#alradif"),
       "sagittarius",
       100,
@@ -1716,7 +1718,7 @@ let stars = {
     ),
     epsilon_cephei: new Star(
       "epsilon_cephei",
-      false,
+      true,
       document.querySelector("#epsilon_cephei"),
       "sagittarius",
       100,
