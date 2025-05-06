@@ -96,6 +96,9 @@ class Star {
     console.log(
       `Surviving avatar has: ${this.defendingAvatar.health} health, ${this.defendingAvatar.damage} damage`
     );
+    this.attacking = "";
+    this.attackingAvatar.health = 0;
+    this.attackingAvatar.damage = 0;
     if (this.combatLoop) {
       clearInterval(this.combatLoop);
       this.combatLoop = null;
@@ -1460,7 +1463,8 @@ let stars = {
       0,
       "phad",
       "tania",
-      "alula_borealis"
+      "alula_borealis",
+      "alioth"
     ),
     alioth: new Star(
       "alioth",

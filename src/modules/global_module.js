@@ -1,13 +1,7 @@
-let myFaction = 1;
-let mySpirit = {
-  health: 30,
-  damage: 3,
-};
-
-const universe = document.querySelector('.universe');
+const universe = document.querySelector(".universe");
 
 function starGenerator() {
-  const star = document.createElement('div');
+  const star = document.createElement("div");
 
   return star;
 }

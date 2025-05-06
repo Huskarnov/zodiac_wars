@@ -35,6 +35,7 @@ const hpValue = document.querySelector("#hpValue");
 const dmgValue = document.querySelector("#dmgValue");
 // --------
 const summonEmpower = document.querySelector("#summonEmpower");
+const soulsAmount = document.querySelector("#soulsAmount");
 const userPower = document.querySelector("#userPower");
 
 summonEmpower.addEventListener("mouseenter", (event) => {
@@ -162,21 +163,30 @@ function setBattleInterface() {
     summonEmpowerButton.textContent = "Summon our Avatar";
   }
 
+  soulsAmount.textContent = users.me.souls;
   hpValue.textContent = users.me.health;
   dmgValue.textContent = users.me.damage;
 }
 
 summonEmpowerButton.addEventListener("click", () => {
-  if (
-    stars[selectedConstellation][selectedStar].peace === true &&
-    stars[selectedConstellation][selectedStar].defending !== users.me.zodiacSign
-  ) {
-    stars[selectedConstellation][selectedStar].attacking = users.me.zodiacSign;
-  }
+  if (users.me.souls > 0) {
+    if (
+      stars[selectedConstellation][selectedStar].peace === true &&
+      stars[selectedConstellation][selectedStar].defending !==
+        users.me.zodiacSign
+    ) {
+      stars[selectedConstellation][selectedStar].attacking =
+        users.me.zodiacSign;
+    }
 
-  stars[selectedConstellation][selectedStar].empowerAvatar(1);
+    stars[selectedConstellation][selectedStar].empowerAvatar(1);
+    users.me.souls -= 1;
 
-  if (stars[selectedConstellation][selectedStar].peace === true) {
-    stars[selectedConstellation][selectedStar].startCombat();
+    if (stars[selectedConstellation][selectedStar].peace === true) {
+      stars[selectedConstellation][selectedStar].peace = false;
+      stars[selectedConstellation][selectedStar].startCombat();
+    }
+  } else {
+    alert("You need more souls");
   }
 });
