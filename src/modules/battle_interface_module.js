@@ -165,7 +165,7 @@ function setBattleInterface() {
     summonEmpowerButton.textContent = "Empower ⮉";
     summonEmpowerButton.style.backgroundColor = "#024608c5";
   } else {
-    summonEmpowerButton.textContent = "Summon ⮋";
+    summonEmpowerButton.textContent = "Summon Avatar ⮋";
     summonEmpowerButton.style.backgroundColor = "#c70808c5";
   }
 
