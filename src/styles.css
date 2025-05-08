@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'powel';
-  src: url('../ressources/fonts/PowellAntique-Bold.ttf');
+  font-family: "powel";
+  src: url("../ressources/fonts/PowellAntique-Bold.ttf");
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rye&display=swap'); */
@@ -22,7 +22,7 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'powel';
+  font-family: "powel";
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -101,7 +101,7 @@ h6 {
 /* ---------------------------------------------------------- */
 
 body {
-  background-image: url('/ressources/images/backgroundblack.webp');
+  background-image: url("/ressources/images/backgroundblack.webp");
   background-size: cover;
 
   /* display: flex;
@@ -129,15 +129,8 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 
-  /* background-image: url('/ressources/images/zwBgRec.png');
-  background-size: cover; */
-
-  /* box-shadow: inset rgba(160, 98, 98, 0.445) -8px 3px 8px 1px,
-    inset rgba(156, 158, 145, 0.055) -11px -2px 5px 5px; */
-
   box-shadow: 0 0 3px white;
 
-  /* border-radius: 0 0 10px 10px; */
   border: none;
 
   padding: 5px 10px 5px 10px;
@@ -264,7 +257,7 @@ header button:hover {
   width: 2000px;
   height: 2000px;
 
-  background-image: url('/ressources/images/12gon.png');
+  background-image: url("/ressources/images/12gon.webp");
   background-size: cover;
 }
 
@@ -303,8 +296,8 @@ header button:hover {
   header {
     /* display: none; */
     grid-template-areas:
-      'top top'
-      'left right';
+      "top top"
+      "left right";
   }
   .headerMid {
     grid-area: top;
