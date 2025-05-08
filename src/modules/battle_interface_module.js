@@ -202,3 +202,4 @@ battleDialog.addEventListener("click", (event) => {
     event.currentTarget.close();
   }
 });
+// s
