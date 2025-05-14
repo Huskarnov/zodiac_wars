@@ -12,4 +12,3 @@ import "./modules/intro_module";
 import "./modules/stars_module";
 import "./modules/users_module";
 import "./modules/battle_interface_module";
-// ccc
